@@ -179,13 +179,13 @@
 </div>
 </div>
 
-<div style="background-image: url(images/blue_wall_1.svg); height: 1160px">
+<div id="testt" style="background-image: url(images/blue_wall_1.svg); height: 1160px; position: relative;">
+  <img src="images/Moulin_Roty_Elephant.png" style="position: absolute; left: 200px; bottom: -38px;" alt="">
 
 </div>
 
 <div id="section_2" class="section">
   
-  <!-- <img src="images/Moulin_Roty_Elephant.png" style="position: absolute; left: 200px; top: -89px;" alt=""> -->
 
   <div id="brands_div_2" class="brands_div">
     
@@ -298,7 +298,15 @@
   {
     section_1.style.zoom = 1;
     section_2.style.zoom = 1;
+    
   }
+  if (vw < 1350)
+  {
+    testt.style.zoom = ratio;
+
+  }
+  else
+  testt.style.zoom = 1;
 }
 </script>
 
