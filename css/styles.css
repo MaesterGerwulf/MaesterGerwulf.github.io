@@ -171,9 +171,6 @@ body {
 .side_photos_div_1 {
   margin-top: 72px;
 }
-.side_photo {
-  margin: 16px 0;
-}
 
 .change_photos_btn {
   width: 160px;
@@ -241,8 +238,14 @@ body {
   .side_photos_div_right {
     right: calc(2.6vw - 18px);
   }
+  .side_photo_div {
+    margin: 24px 0;
+  }
   .side_photo {
-    width: 232px;
+    margin: 4px;
+    width: 224px;
+    height: 224px;
+    border-radius: 8px;
   }
 }
 @media all and (max-width: 767.97px)
@@ -264,12 +267,14 @@ body {
   .side_photos_div {
     position: relative;
     display: inline-block;
-    width: 148px;
+    /* width: 139.2px; */
     padding-left: calc((12.3vw - 34px) * 3 / 5);
     padding-right: calc((12.3vw - 34px) * 3 / 5);
   }
   .side_photo {
-    width: 148px;
+    margin: 2.4px;
+    width: 134.4px;
+    height: 134.4px;
   }
   .change_photos_btn {
     display: none;
