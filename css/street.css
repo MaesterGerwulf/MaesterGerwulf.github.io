@@ -1,0 +1,205 @@
+#street_img_1_1 {
+  top: -86px;
+}
+#street_img_1_2 {
+  top: 399px;
+}
+#street_img_1_3 {
+  top: 9px;
+}
+#street_img_1_4 {
+  top: 610px;
+}
+#street_img_1_5 {
+  top: 322px;
+}
+#street_img_1_6 {
+  top: -86px;
+}
+#street_img_1_7 {
+  top: 421px;
+}
+#street_img_1_8 {
+  top: -210px;
+}
+
+#street_img_2_1 {
+  top: -89px;
+}
+#street_img_2_2 {
+  top: 402px;
+}
+#street_img_2_3 {
+  top: -15px;
+}
+#street_img_2_4 {
+  top: 489px;
+}
+#street_img_2_5 {
+  top: -38px;
+}
+#street_img_2_6 {
+  top: 438px;
+}
+#street_img_2_7 {
+  top: 186px;
+}
+#street_img_2_8 {
+  top: -298px;
+}
+
+#street_img_3_1 {
+  top: 107px;
+}
+#street_img_3_2 {
+  top: -32px;
+}
+#street_img_3_3 {
+  top: 494px;
+}
+#street_img_3_4 {
+  top: 150px;
+}
+#street_img_3_5 {
+  top: -188px;
+}
+
+#street_img_4_1 {
+  top: -74px;
+}
+#street_img_4_2 {
+  top: 398px;
+}
+#street_img_4_3 {
+  top: 24px;
+}
+#street_img_4_4 {
+  top: 487px;
+}
+#street_img_4_5 {
+  top: -82px;
+}
+#street_img_4_6 {
+  top: 294px;
+}
+#street_img_4_7 {
+  top: -215px;
+}
+
+@media all and (min-width: 1350px)
+{
+  #street_img_1_1 {
+    left: 0;
+  }
+  #street_img_1_2 {
+    left: calc(22.7vw - 72px);
+  }
+  #street_img_1_3 {
+    left: calc(43.4vw - 190px);
+  }
+  #street_img_1_4 {
+    left: calc(49.5vw - 50px);
+  }
+  #street_img_1_5 {
+    left: calc(68.4vw - 176px);
+  }
+  #street_img_1_6 {
+    left: calc(79vw - 200px);
+  }
+  #street_img_1_7 {
+    left: calc(89.7vw - 81px);
+  }
+  #street_img_1_8 {
+    left: calc(93vw - 69px);
+  }
+  
+  #street_img_2_1 {
+    left: calc(10vw - 135px);
+  }
+  #street_img_2_2 {
+    left: calc(15.6vw - 63px);
+  }
+  #street_img_2_3 {
+    left: calc(35.5vw - 132px);
+  }
+  #street_img_2_4 {
+    left: calc(50vw - 73px);
+  }
+  #street_img_2_5 {
+    left: calc(62.5vw - 141px);
+  }
+  #street_img_2_6 {
+    left: calc(78.6vw - 73px);
+  }
+  #street_img_2_7 {
+    left: calc(89.5vw - 102px);
+  }
+  #street_img_2_8 {
+    left: calc(88.5vw - 60px);
+  }
+  
+  #street_img_3_1 {
+    left: calc(10.416667vw - 150px);
+  }
+  #street_img_3_2 {
+    left: calc(37.604167vw - 160px);
+  }
+  #street_img_3_3 {
+    left: calc(49.635417vw - 66px);
+  }
+  #street_img_3_4 {
+    left: calc(72.500000vw - 198px);
+  }
+  #street_img_3_5 {
+    right: 0;
+  }
+  
+  #street_img_4_1 {
+    left: 0;
+  }
+  #street_img_4_2 {
+    left: calc(12.812500vw - 153px);
+  }
+  #street_img_4_3 {
+    left: calc(36.927083vw - 210px);
+  }
+  #street_img_4_4 {
+    left: calc(49.843750vw - 62px);
+  }
+  #street_img_4_5 {
+    left: calc(70.312500vw - 166px);
+  }
+  #street_img_4_6 {
+    right: 0;
+  }
+  #street_img_4_7 {
+    right: 0;
+  }
+}
+@media all and (max-width: 1349.97px)
+{
+  #street_img_1_1 {
+    left: 0;
+  }
+  #street_img_1_2 {
+    left: 17.3667%;
+  }
+  #street_img_1_3 {
+    left: 29.3259%;
+  }
+  #street_img_1_4 {
+    left: 45.7963%;
+  }
+  #street_img_1_5 {
+    left: 55.3630%;
+  }
+  #street_img_1_6 {
+    left: 64.1852%;
+  }
+  #street_img_1_7 {
+    left: 83.7000%;
+  }
+  #street_img_1_8 {
+    left: 87.8889%;
+  }
+}
