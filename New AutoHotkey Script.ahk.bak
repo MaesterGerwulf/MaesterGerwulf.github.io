@@ -9,7 +9,7 @@ if (1 == 1)
 		a := (x + halfWidth) / 1920
 		a1 := a * 100
 
-		Clipboard := "left: calc(" . a 1.  "vw" . " - " . halfWidth . "px);"
+		Clipboard := "left: calc(" . a1 .  "vw" . " - " . halfWidth . "px);"
 		MsgBox, next
 	}
 }

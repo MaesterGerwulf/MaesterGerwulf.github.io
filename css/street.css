@@ -139,16 +139,16 @@
   }
   
   #street_img_3_1 {
-    left: calc(10.416667vw - 150px);
+    left: calc(10.4vw - 150px);
   }
   #street_img_3_2 {
-    left: calc(37.604167vw - 160px);
+    left: calc(37.6vw - 160px);
   }
   #street_img_3_3 {
-    left: calc(49.635417vw - 66px);
+    left: calc(49.6vw - 66px);
   }
   #street_img_3_4 {
-    left: calc(72.500000vw - 198px);
+    left: calc(72.5vw - 198px);
   }
   #street_img_3_5 {
     right: 0;
@@ -158,16 +158,16 @@
     left: 0;
   }
   #street_img_4_2 {
-    left: calc(12.812500vw - 153px);
+    left: calc(12.8vw - 153px);
   }
   #street_img_4_3 {
-    left: calc(36.927083vw - 210px);
+    left: calc(36.9vw - 210px);
   }
   #street_img_4_4 {
-    left: calc(49.843750vw - 62px);
+    left: calc(49.8vw - 62px);
   }
   #street_img_4_5 {
-    left: calc(70.312500vw - 166px);
+    left: calc(70.3vw - 166px);
   }
   #street_img_4_6 {
     right: 0;
@@ -201,5 +201,68 @@
   }
   #street_img_1_8 {
     left: 87.8889%;
+  }
+
+  #street_img_2_1 {
+    left: 0;
+  }
+  #street_img_2_2 {
+    left: 10.933333%;
+  }
+  #street_img_2_3 {
+    left: 25.722222%;
+  }
+  #street_img_2_4 {
+    left: 44.592593%;
+  }
+  #street_img_2_5 {
+    left: 52.055556%;
+  }
+  #street_img_2_6 {
+    left: 73.192593%;
+  }
+  #street_img_2_7 {
+    left: 81.944444%;
+  }
+  #street_img_2_8 {
+    left: 84.055556%;
+  }
+  
+  #street_img_3_1 {
+    left: -0.711111%;
+  }
+  #street_img_3_2 {
+    left: 25.748148%;
+  }
+  #street_img_3_3 {
+    left: 44.711111%;
+  }
+  #street_img_3_4 {
+    left: 57.833333%;
+  }
+  #street_img_3_5 {
+    right: 0;
+  }
+  
+  #street_img_4_1 {
+    left: 0;
+  }
+  #street_img_4_2 {
+    left: 1.5%;
+  }
+  #street_img_4_3 {
+    left: 21.3%;
+  }
+  #street_img_4_4 {
+    left: 45.2%;
+  }
+  #street_img_4_5 {
+    left: 58%;
+  }
+  #street_img_4_6 {
+    right: 0;
+  }
+  #street_img_4_7 {
+    right: 0;
   }
 }

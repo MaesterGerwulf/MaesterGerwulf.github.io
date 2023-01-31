@@ -78,6 +78,7 @@ body {
   text-align: center;
   margin: 1px auto 3px auto;
   color: var(--cyan);
+  position: relative;
 }
 
 .brand_div {
@@ -92,8 +93,9 @@ body {
   height: 200px;
   background-size: 100%;
   border-radius: 8px;
-  cursor: url("../images/Hand\ -\ Right\ Cyan.svg"), pointer;
+  cursor: url("../images/Hand_Cyan_Right.svg"), auto;
 }
+
 .brand_inner_div_1 {
   background-color: var(--offwhite1);
   background-image: url("../images/brand_back_1.svg");
@@ -102,10 +104,11 @@ body {
 .brand_name {
   font-family: LeagueSpartan;
   font-variation-settings: "wght" 600;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 40px;
   text-align: center;
   margin: 0;
+  position: relative;
   
 }
 .brand_name_1 {
@@ -116,52 +119,57 @@ body {
   width: 90px;
   height: 90px;
   left: 80px;
-  top: 12px;
+  top: 28px;
 }
 #brand_logo_2 {
   width: 230px;
   height: 45px;
   left: 10px;
-  top: 42px;
+  top: 58px;
 }
 #brand_logo_3 {
   width: 191px;
   height: 45px;
   left: 30px;
-  top: 36px;
+  top: 52px;
 }
 #brand_logo_4 {
   width: 211px;
   height: 57px;
   left: 20px;
-  top: 22px;
+  top: 38px;
 }
 #brand_logo_5 {
   width: 182px;
   height: 50px;
   left: 34px;
-  top: 29px;
-}
-#brand_logo_6 {
-  width: 211px;
-  height: 34px;
-  left: 20px;
   top: 45px;
 }
 
-.brand_txt {
+.flag {
   position: absolute;
-  top: 126px;
-  left: 0;
-  margin: 0 13px;
-  text-align: center;
-  font-family: LeagueSpartan;
-  font-variation-settings: "wght" 300;
-  font-size: 20px;
-  line-height: 22px;
+  top: 152px;
+  height: 24px;
 }
-.brand_txt_1 {
-  color: var(--black);
+.flag_w33 {
+  width: 33px;
+  left: 109px
+}
+.flag_w36 {
+  width: 36px;
+  left: 107px
+}
+.flag_w28 {
+  width: 28px;
+  left: 111px
+}
+.flag_w41 {
+  width: 41px;
+  left: 105px
+}
+.flag_w45_5 {
+  width: 45.5px;
+  left: 103px
 }
 
 .side_photos_div {
@@ -184,7 +192,7 @@ body {
   border-width: 0;
   line-height: 36px;
   user-select: none;
-  cursor: url("../images/Hand\ -\ Right\ White.svg"), auto;
+  cursor: url("../images/Hand_White_Right.svg"), auto;
   position: relative;
   margin: 0 auto;
 }
@@ -192,7 +200,8 @@ body {
   position: absolute;
   left: 141px;
   top: 9px;
-  fill: var(--offwhite1);
+  width: 33px;
+  height: 33px;
 }
 
 @media all and (min-width: 1350px)
@@ -247,6 +256,33 @@ body {
     height: 224px;
     border-radius: 8px;
   }
+  .side_photo_dream {
+    width: 232px;
+    height: 232px;
+    margin: 16px 0;
+  }
+  .side_photo_rooms_div {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background-image: url("../images/Window.svg");
+    margin: 24px 0;
+  }
+  .side_photo_rooms {
+    position: absolute;
+    bottom: 25px;
+    left: 17px;
+    width: 206px;
+  }
+  .change_rooms_btn {
+    margin-bottom: 28px;
+  }
+  .change_photo_divs_div {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 @media all and (max-width: 767.97px)
 {
@@ -267,7 +303,6 @@ body {
   .side_photos_div {
     position: relative;
     display: inline-block;
-    /* width: 139.2px; */
     padding-left: calc((12.3vw - 34px) * 3 / 5);
     padding-right: calc((12.3vw - 34px) * 3 / 5);
   }
@@ -275,6 +310,16 @@ body {
     margin: 2.4px;
     width: 134.4px;
     height: 134.4px;
+    display: block;
+  }
+  .side_photo_dream {
+    width: 139.2px;
+    height: 139.2px;
+    display: block;
+    margin: 16px 0;
+  }
+  .side_photo_rooms {
+
   }
   .change_photos_btn {
     display: none;
@@ -421,6 +466,11 @@ body {
 .showcase_line_middle {
   outline: 1px solid var(--brown1);
 }
+.showcase_wave {
+  width: calc(100% + 2px);
+  display: block;
+  margin: -1px 0 0 -1px;
+}
 
 .showcase_large_item_div {
   display: inline-block;
@@ -428,6 +478,7 @@ body {
 .showcase_large_item {
   transition: 1000ms;
   transform-origin: center;
+  margin: 0 29.5px;
 }
 
 .showcase_below {
@@ -497,7 +548,6 @@ body {
   }
   .showcase_large_item_div {
     outline: 1px solid var(--brown1);
-    padding: 0 29.5px;
   }
   .showcase_large_item {
     width: 270px;
@@ -515,9 +565,6 @@ body {
   }
   .showcase_item_pad_right {
     margin-right: 16px;
-  }
-  .showcase_large_item_div {
-    padding: 0 29.5px;
   }
   .showcase_large_item {
     width: 270px;
@@ -553,11 +600,11 @@ body {
   }
   .showcase_large_item_div {
     border: 1px solid var(--brown1);
-    padding: 8px 24px;
   }
   .showcase_large_item {
     width: 135px;
     height: 135px;
+    margin: 8px 24px;
   }
 }
 
@@ -714,31 +761,60 @@ body {
 @media all and (max-width: 1349.97px)
 {
   #bridge_2_img_1_1 {
-
+    left: 16.4%;
   }
   #bridge_2_img_1_2 {
-    
+    left: 36.4%;
   }
   #bridge_2_img_1_3 {
-    
+    left: 56.4%;
   }
   #bridge_2_img_1_4 {
-    
+    left: 76.4%;
   }
-  #bridge_2_img_4_1 {
 
+  #bridge_2_img_2_1 {
+    left: 0.45%;
+  }
+  #bridge_2_img_2_2 {
+    left: 11.6%;
+  }
+  #bridge_2_img_2_3 {
+    left: 26.8%;
+  }
+  #bridge_2_img_2_4 {
+    left: 36.3%;
+  }
+  #bridge_2_img_2_5 {
+    left: 43.3%;
+  }
+  #bridge_2_img_2_6 {
+    left: 52%;
+  }
+  #bridge_2_img_2_7 {
+    left: 65.1%;
+  }
+  #footsteps_3 {
+    left: 82.5%;
+  }
+  #bridge_2_img_2_8 {
+    left: 79.5%;
+  }
+
+  #bridge_2_img_4_1 {
+    left: 0.29%;
   }
   #bridge_2_img_4_2 {
-    
+    left: 18.5%;
   }
   #bridge_2_img_4_3 {
-    
+    left: 36.8%;
   }
   #bridge_2_img_4_4 {
-    
+    left: 55.3%;
   }
   #bridge_2_img_4_5 {
-    
+    left: 71.2%;
   }
   #bridge_2_img_4_6 {
     left: 86.37%;
@@ -748,10 +824,17 @@ body {
 /* Section 2 */
 
 #section_2 {
-  background-image: url("../images/night_back.png");
+  /* background-image: url("../images/night_back.png"); */
+  /* background-image: url("../Background\ -\ Night.mpeg"); */
+  position: relative;
   height: 1080px;
   background-position-x: center;
   z-index: 1;
+}
+#video_background {
+  position: absolute;
+  left: calc((100vw - 1920px - 15px) / 2);
+  height: 100%;
 }
 
 #brands_div_2 {
@@ -760,48 +843,33 @@ body {
 .brand_name_2 {
   color: var(--lightbrown);
 }
-#brand_logo_7 {
-  width: 211px;
-  height: 36px;
-  left: 20px;
-  top: 46px;
-}
-#brand_logo_8 {
-  width: 230px;
-  height: 43px;
-  left: 10px;
-  top: 40px;
-}
-#brand_logo_9 {
+#brand_logo_6 { 
   width: 230px;
   height: 46px;
   left: 10px;
-  top: 37px;
+  top: 53px;
 }
-#brand_logo_10 {
-  width: 127px;
-  height: 90px;
-  left: 61px;
-  top: 17px;
-}
-#brand_logo_11 {
-  width: 163.5px;
-  height: 55px;
-  left: 43px;
-  top: 31px;
-}
-#brand_logo_12 {
+#brand_logo_7 { 
   width: 90px;
   height: 99.5px;
   left: 80px;
-  top: 12px;
+  top: 28px;
+}
+#brand_logo_8 { 
+  width: 163.5px;
+  height: 55px;
+  left: 43px;
+  top: 47px;
+}
+#brand_logo_9 { 
+  width: 166px;
+  height: 74px;
+  left: 42px;
+  top: 39px;
 }
 
 .brand_inner_div_2 {
   background-image: url("../images/brand_back_2.svg");
-}
-.brand_txt_2 {
-  color: var(--offwhite1);
 }
 
 .side_photos_div_2 {
@@ -814,6 +882,7 @@ body {
 
 .change_dreams_btn {
   background-color: rgb(79, 193, 183, 0.75);
+  margin-bottom: 16px;
 }
 
 @media all and (min-width: 1520px)
@@ -948,6 +1017,47 @@ body {
   }
   #bridge_3_img_3_4 {
     left: calc(85.8vw - 246px);
+  }
+}
+
+@media all and (max-width: 1349.97px)
+{
+  #bridge_3_img_2_3 {
+    left: 8.7%;
+  }
+  #bridge_3_img_2_4 {
+    left: 24.2%;
+  }
+  #bridge_3_img_2_5 {
+    left: 39.8%;
+  }
+  #bridge_3_img_2_6 {
+    left: 46%;
+  }
+  #bridge_3_img_2_7 {
+    left: 55%;
+  }
+  #bridge_3_img_2_8 {
+    left: 64.4%;
+  }
+  #bridge_3_img_2_9 {
+    left: 78%;
+  }
+
+  #footsteps_4 {
+    left: 19.6%;
+  }
+  #bridge_3_img_3_1 {
+    left: 0.15%;
+  }
+  #bridge_3_img_3_2 {
+    left: 19.5%;
+  }
+  #bridge_3_img_3_3 {
+    left: 43.7%;
+  }
+  #bridge_3_img_3_4 {
+    left: 67.6%;
   }
 }
 
@@ -1130,6 +1240,51 @@ body {
   }
 }
 
+@media all and (max-width: 1349.97px)
+{
+  #cloud_1 {
+    left: 0.33RF%;
+  }
+  #cloud_2 {
+    left: 29.2%;
+  }
+  #cloud_3 {
+    left: 80.4%;
+  }
+
+  #bridge_4_img_1_1 {
+    left: 16.7%;
+  }
+  #bridge_4_img_1_2 {
+    left: 44%;
+  }
+  #bridge_4_img_1_3 {
+    left: 66.8%;
+  }
+  #bridge_4_img_1_4 {
+    left: 84.9%;
+  }
+  
+  #bridge_4_img_2_1 {
+    left: 2.9%;
+  }
+  #bridge_4_img_2_2 {
+    left: 27.3%;
+  }
+  #bridge_4_img_2_3 {
+    left: 34.2%;
+  }
+  #bridge_4_img_2_4 {
+    left: 51.8%;
+  }
+  #bridge_4_img_2_5 {
+    left: 69.3%;
+  }
+  #bridge_4_img_2_6 {
+    left: 79.7%;
+  }
+}
+
 /* Section 3 */
 
 #section_3 {
@@ -1145,41 +1300,35 @@ body {
   margin-top: 38px;
 }
 
-#brand_logo_13 {
-  width: 211px;
-  height: 77px;
-  left: 22px;
-  top: 35px;
-}
-#brand_logo_14 {
+#brand_logo_10 {
   width: 230px;
   height: 51px;
   left: 11.5px;
-  top: 43px;
+  top: 59px;
 }
-#brand_logo_15 {
+#brand_logo_11 { 
+  width: 127px;
+  height: 90px;
+  left: 61px;
+  top: 33px;
+}
+#brand_logo_12 { 
+  width: 211px;
+  height: 34px;
+  left: 20px;
+  top: 61px;
+}
+#brand_logo_13 {
   width: 232px;
   height: 65px;
   left: 10px;
-  top: 21px;
-}
-#brand_logo_16 {
-  width: 90px;
-  height: 88px;
-  left: 80px;
-  top: 12px;
-}
-#brand_logo_17 {
-  width: 211px;
-  height: 47px;
-  left: 20px;
   top: 37px;
 }
-#brand_logo_18 {
-  width: 220px;
-  height: 71px;
-  left: 15px;
-  top: 20px;
+#brand_logo_14 { 
+  width: 211px;
+  height: 77px;
+  left: 22px;
+  top: 51px;
 }
 
 .brand_inner_div_3 {
@@ -1228,9 +1377,10 @@ body {
   fill: var(--cyan);
   width: 24px;
   position: absolute;
-  top: 0px;
-  left: 50px;
+  top: 160px;
+  left: 250px;
 }
+
 
 #contact_photo_div {
   position: relative;
@@ -1239,6 +1389,13 @@ body {
 #contact_photo {
   width: 318px;
   height: 320px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1349.97px)
+{
+  .fb_iframe_widget iframe {
+    display: none;
+  }
 }
 
 @media all and (min-width: 768px)
@@ -1286,7 +1443,6 @@ body {
 }
 #photo_viewer_1 {
   left: 0;
-  padding-bottom: 29px;
   border-radius: 0 10px 0 0;
 }
 #photo_viewer_2 {
@@ -1295,6 +1451,7 @@ body {
 }
 
 .click_photo_div_bottom {
+  margin: 0.3vw 0;
 }
 
 .click_photo_bottom_txt {
@@ -1317,9 +1474,9 @@ body {
   display: inline-block;
 }
 
-#copyright_txt {
+.copyright_txt {
   font-family: LeagueSpartan;
-  font-size: 16px;
+  font-size: 0.833vw;
   font-variation-settings: "wght" 300;
   color: var(--offwhite1);
   margin: 9px 0 5px 0;
