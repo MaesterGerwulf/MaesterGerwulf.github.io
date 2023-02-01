@@ -194,7 +194,7 @@ body {
 }
 .flag_w41 {
   width: 41px;
-  left: 105px
+  left: 102px
 }
 .flag_w45_5 {
   width: 45.5px;
@@ -245,6 +245,12 @@ body {
     padding-left: calc(9vw - 110px);
     padding-right: calc(9vw - 110px);
   }
+  .brand_div_1 {
+    padding: 12px calc(17.5vw - 89px);
+  }
+  #stokke_div {
+    left: calc(50vw - 132.5px);
+  }
 }
 @media all and (min-width: 768px) and (max-width: 1349.97px)
 {
@@ -255,9 +261,24 @@ body {
     padding-left: 12px;
     padding-right: 12px;
   }
+  .brand_div_1 {
+    padding: 12px 148px;
+  }
+  #stokke_div {
+    left: calc(0.95vw + 530px);
+  }
 }
 @media all and (min-width: 768px)
 {
+  #stokke_div {
+    position: absolute;
+    top:544px;
+    padding: 0;
+  }
+  #brands_div_1 {
+    margin: 0;
+  }
+  
   #section_1 {
     display: flex;
   }
@@ -955,6 +976,7 @@ body {
     position: absolute;
     left: calc((100vw - 1920px - 15px) / 2);
     height: 100%;
+    display: none;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1349.97px)
