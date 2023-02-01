@@ -237,14 +237,14 @@
   <div class="floor" id="floor_2"></div>
 
   <img class="product" id="footsteps_3" src="images/footsteps_3.svg" alt="">
-  <img class="product animation" id="bridge_2_img_2_1" src="images/products/Bizzi_Growin_Scene.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_2" src="images/products/JetKids_by_Stokke.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_3" src="images/products/Stokke_Flexi_Bath.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_4" src="images/products/Pearhead_Piggy_Bank.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_5" src="images/products/Bizzi_Growin_Scenes.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_6" src="images/products/SnoozeBaby_Scene.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_7" src="images/products/Bizzi_Growin_Scene_2.png" alt="">
-  <img class="product animation" id="bridge_2_img_2_8" src="images/products/Moulin_Roty_Fish_And_Bugaboo.png" alt="">
+  <img class="product animation" id="bridge_2_img_2_1" src="images/products/Bizzi_Growin_Scene.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_2" src="images/products/JetKids_by_Stokke.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_3" src="images/products/Stokke_Flexi_Bath.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_4" src="images/products/Pearhead_Piggy_Bank.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_5" src="images/products/Bizzi_Growin_Scenes.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_6" src="images/products/SnoozeBaby_Scene.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_7" src="images/products/Bizzi_Growin_Scene_2.png" loading="lazy" alt="">
+  <img class="product animation" id="bridge_2_img_2_8" src="images/products/Moulin_Roty_Fish_And_Bugaboo.png" loading="lazy" alt="">
 
   <img class="product" id="bridge_2_img_3_1" src="images/products/Trois_Kilos_Sept_Rocker.png" alt="">
   <img class="product" id="bridge_2_img_3_2" src="images/products/Trois_Kilos_Sept_Musical_Mobile_1.png" alt="">
@@ -261,8 +261,8 @@
 
 <div id="section_2" class="section">
 
-  <video autoplay muted id="video_background">
-    <source src="Background - Night.mp4">
+  <video autoplay muted playsinline id="video_background" poster="images/night_back.png">
+    <source data-src="Background - Night.mp4" type="video/mp4">
   </video>
   
   <div id="brands_div_2" class="brands_div">
@@ -289,7 +289,7 @@
       </a>
     </div>
     
-    <div class="brand_div">
+    <div class="brand_div" id="brand_div_2_3">
       <h4 class="brand_name brand_name_2">Quax</h4>
       <a href="https://quax.eu"></a>
         <div class="brand_inner_div brand_inner_div_2">
@@ -587,7 +587,9 @@
       <iframe style="margin-top:15px; border-width: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.1706547439857!2d44.77638005109239!3d41.70786378390042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d836ea3bf29%3A0xd76cfc1d57c5fea7!2zTydsYWxhIOKAoiDhg50n4YOa4YOQ4YOa4YOQ!5e0!3m2!1sen!2sge!4v1674832288906!5m2!1sen!2sge" width="318" height="306" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div id="darken_map"></div>
       <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
-      <video muted preload="none" src="Google Map Cover.mp4" id="google_map_cover"></video>
+      <video autoplay muted playsinline id="google_map_cover" poster="images/night_back.png">
+        <source data-src="Google Map Cover.mp4" type="video/mp4">
+      </video>
     </div>
   
     <div class="contact_div_piece" id="contact_inner_div">
@@ -980,8 +982,13 @@
 
 <!-- Animation -->
 <script>
-let observer1 = new IntersectionObserver((entries) => 
-  handleObserve(observer1, entries, 1, 2, 4), { threshold: [0] });
+let observer1 = new IntersectionObserver((entries) => {
+  // const video1 = document.createElement('video');
+  // const video2 = document.createElement('video');
+  // video1.src = "Background - Night.mp4";
+  // video2.src = "Google Map Cover.mp4";
+  handleObserve(observer1, entries, 1, 2, 4);
+}, { threshold: [0] });
 
 let observer2 = new IntersectionObserver((entries) => 
   handleObserve(observer2, entries, 2, 2, 8), { threshold: [0] });
@@ -1000,19 +1007,6 @@ let observer6 = new IntersectionObserver((entries) =>
 
 let observer7 = new IntersectionObserver((entries) => 
   handleObserve(observer7, entries, 4, 2, 6), { threshold: [0] });
-
-let observer8 = new IntersectionObserver((entries) =>
-{
-  if (entries[0].isIntersecting)
-  {
-    google_map_cover.play();
-    setTimeout(() => {
-      google_map_cover.style.display = "none";
-      darken_map.style.display = "none";
-    }, 4000);
-    observer8.unobserve(entries[0].target);
-  }
-}, { threshold: [0] });
 
 function handleObserve(observer, entries, bridgeNum, imgNum, imgCount)
 {
@@ -1043,13 +1037,60 @@ observer4.observe(document.querySelector("#bridge_3"));
 observer5.observe(document.querySelector("#floor_3"));
 observer6.observe(document.querySelector("#bridge_4"));
 observer7.observe(document.querySelector("#floor_4"));
-observer8.observe(document.querySelector("#google_map_cover"));
+// observer8.observe(document.querySelector("#google_map_cover"));
+
+document.addEventListener("DOMContentLoaded", function()
+{
+  if ("IntersectionObserver" in window)
+  {
+    var lazyVideoObserver1 = new IntersectionObserver(function(entries, observer)
+    {
+      if (entries[0].isIntersecting)
+      {
+        for (var source in video_background.children)
+        {
+          var videoSource = video_background.children[source];
+
+          if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE")
+            videoSource.src = videoSource.dataset.src;
+        }
+
+        video_background.load();
+        lazyVideoObserver.unobserve(entries[0].target);
+      }
+    });
+
+    lazyVideoObserver1.observe(document.getElementById("brand_div_2_3"));
+
+    var lazyVideoObserver2 = new IntersectionObserver(function(entries, observer)
+    {
+      if (entries[0].isIntersecting)
+      {
+        for (var source in google_map_cover.children)
+        {
+          var videoSource = google_map_cover.children[source];
+
+          if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE")
+            videoSource.src = videoSource.dataset.src;
+        }
+
+        google_map_cover.load();
+        setTimeout(() => {
+          google_map_cover.style.display = "none";
+          darken_map.style.display = "none";
+        }, 4000);
+        lazyVideoObserver.unobserve(entries[0].target);
+      }
+    });
+
+    lazyVideoObserver2.observe(document.getElementById("google_map_cover"));
+  }
+});
 </script>
 
 <script>
   function onloadd()
   {
-    // google_map_cover.src = "Google Map Cover.mp4";
   }
 </script>
 
