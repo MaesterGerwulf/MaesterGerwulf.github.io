@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/street.css">
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
   <title>O'lala</title>
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body onload="onloadd()">
 <!-- 
@@ -16,12 +18,17 @@
   and life begins      
 
 -->
+<a href="/">
+  <img id="home_btn_small" src="images/olala_logo_small.svg"  alt="">
+</a>
 
 <div id="section_1" class="section">
   
-  <div class="brands_div">
+  <div class="brands_div" id="brands_div_1">
     
-    <img id="home_large" src="images/olala_logo_large.svg" alt="">
+    <a href="/">
+      <img id="home_large" src="images/olala_logo_large.svg" alt="Olala Logo Large">
+    </a>
 
     <h3 id="and_life_begins_txt">... and life begins ...</h3>
 
@@ -149,8 +156,8 @@
     <div class="showcase_side">
        <div class="showcase_line">
           <img src="images/Showcase_Wave_Left.svg" class="showcase_wave" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="SnoozeBaby_Clothes">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="dream">
+          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="SnoozeBaby_Clothes">
+          <img class="showcase_item showcase_item_pad_left" name="Snoozebaby" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="dream">
           <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="">
           <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="">
           <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" alt="">
@@ -210,7 +217,7 @@
       <p class="click_photo_txt">Click Photo</p>
     </div>
 
-    <p class="showcase_item_name">Stokke</p>
+    <p class="showcase_item_name" id="showcase_1_item_name">Stokke</p>
 
     <div class="click_photo_div click_photo_div_2">
       <img class="click_photo_hand" src="images/Hand_Cyan_Left.svg" alt="">
@@ -431,7 +438,7 @@
       <p class="click_photo_txt">Click Photo</p>
     </div>
 
-    <p class="showcase_item_name">Stokke</p>
+    <p class="showcase_item_name" id="showcase_2_item_name">Stokke</p>
 
     <div class="click_photo_div click_photo_div_2">
       <img class="click_photo_hand" src="images/Hand_Cyan_Left.svg" alt="">
@@ -577,8 +584,10 @@
   <div id="contact_div">
 
     <div class="contact_div_piece" id="google_map" style="position: relative; height: 320px; vertical-align: top;">
-      <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
       <iframe style="margin-top:15px; border-width: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.1706547439857!2d44.77638005109239!3d41.70786378390042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d836ea3bf29%3A0xd76cfc1d57c5fea7!2zTydsYWxhIOKAoiDhg50n4YOa4YOQ4YOa4YOQ!5e0!3m2!1sen!2sge!4v1674832288906!5m2!1sen!2sge" width="318" height="306" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="darken_map"></div>
+      <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
+      <video muted preload="none" src="Google Map Cover.mp4" id="google_map_cover"></video>
     </div>
   
     <div class="contact_div_piece" id="contact_inner_div">
@@ -600,7 +609,7 @@
 
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="nbKkP4OI"></script>
-  <div style="text-align: center; margin: 30px 0">
+  <div id="change_season_div">
     <div id="change_season_btn" class="change_photos_btn">
       CHANGE SEASONS
       <div class="change_photos_hand">
@@ -613,6 +622,14 @@
   
 <div id="street">
 </div>
+
+<script>
+  lightbox.option({
+    "imageFadeDuration": 0,
+    "resizeDuration": 0,
+    "disableScrolling": true
+  })
+</script>
   
 <div id="bottom_div">
 
@@ -623,9 +640,15 @@
     </div>
 
     <div class="store_photos_div">
-      <img class="store_photo" src="images/store_photo.png" alt="">
-      <img class="store_photo" src="images/store_photo.png" alt="">
-      <img class="store_photo" src="images/store_photo.png" alt="">
+      <a href="images/store_photo.png" data-lightbox="viewer" data-title="Image 1" data-alt="">
+        <img class="store_photo" src="images/store_photo.png" alt="">
+      </a>
+      <a href="images/store_photo.png" data-lightbox="viewer" data-title="Image 1" data-alt="">
+        <img class="store_photo" src="images/store_photo.png" alt="">
+      </a>
+      <a href="images/store_photo.png" data-lightbox="viewer" data-title="Image 1" data-alt="">
+        <img class="store_photo" src="images/store_photo.png" alt="">
+      </a>
     </div>
 
     <p class="copyright_txt" style="visibility: hidden;">filler</p>
@@ -643,9 +666,13 @@
     </div>
 
     <div class="store_photos_div">
-      <img class="store_photo" src="images/store_photo.png" alt="">
-      <img class="store_photo" src="images/store_photo.png" alt="">
-      <img class="store_photo" src="images/store_photo.png" alt="">
+      <a href="images/store_photo.png" data-lightbox="viewer" data-title="Image 1" data-alt="">
+        <img class="store_photo" src="images/store_photo.png" alt="">
+      </a><a href="images/store_photo.png" data-lightbox="viewer" data-title="Image 1" data-alt="">
+        <img class="store_photo" src="images/store_photo.png" alt="">
+      </a><a href="images/store_photo.png" data-lightbox="viewer" data-title="Image 1" data-alt="">
+        <img class="store_photo" src="images/store_photo.png" alt="">
+      </a>
     </div>
 
     <a href="https://www.facebook.com/mariam.akhalkatsi.3">
@@ -656,6 +683,8 @@
 
   
 </div>
+
+
 
 <!-- Handle mid range -->
 <script>
@@ -668,7 +697,13 @@
     const vw = window.innerWidth;
     const ratio = vw / 1350;
     const showcaseDivs = document.getElementsByClassName("showcase_div");
-    console.log(vw);
+    
+    if (vw > 1920)
+    {
+      // video_background.style.height = (1080 * 1920 / vw) + "px";
+      // console.log((1080 * 1920 / vw));
+    }
+    
     if (vw >= 768 && vw < 1350)
     {
       section_1.style.zoom = ratio;
@@ -925,6 +960,7 @@
       largeItem.style.transform = "scale(0)";
       setTimeout(() => 
       {
+        document.getElementById(showcaseName + "_item_name").innerHTML = evt.target.name;
         largeItem.src  = "images/showcase_items/" + evt.target.alt + "_270.png";
         largeItem.style.transform = "scale(1)";
       }, 1100);
@@ -944,9 +980,6 @@
 
 <!-- Animation -->
 <script>
-function onloadd() {
-  
-}
 let observer1 = new IntersectionObserver((entries) => 
   handleObserve(observer1, entries, 1, 2, 4), { threshold: [0] });
 
@@ -967,6 +1000,20 @@ let observer6 = new IntersectionObserver((entries) =>
 
 let observer7 = new IntersectionObserver((entries) => 
   handleObserve(observer7, entries, 4, 2, 6), { threshold: [0] });
+
+let observer8 = new IntersectionObserver((entries) =>
+{
+  if (entries[0].isIntersecting)
+  {
+    google_map_cover.play();
+    setTimeout(() => {
+      google_map_cover.style.display = "none";
+      darken_map.style.display = "none";
+    }, 4000);
+    observer8.unobserve(entries[0].target);
+  }
+}, { threshold: [0] });
+
 function handleObserve(observer, entries, bridgeNum, imgNum, imgCount)
 {
   if (entries[0].isIntersecting)
@@ -996,6 +1043,14 @@ observer4.observe(document.querySelector("#bridge_3"));
 observer5.observe(document.querySelector("#floor_3"));
 observer6.observe(document.querySelector("#bridge_4"));
 observer7.observe(document.querySelector("#floor_4"));
+observer8.observe(document.querySelector("#google_map_cover"));
+</script>
+
+<script>
+  function onloadd()
+  {
+    // google_map_cover.src = "Google Map Cover.mp4";
+  }
 </script>
 
 <!-- <picture class="lazy">
@@ -1005,9 +1060,7 @@ observer7.observe(document.querySelector("#floor_4"));
   <img src="tiny-lighthouse.jpg" alt="snazzy cake" />
 </picture> -->
 
-<a href="/">
-  <img id="home_btn_small" src="images/olala_logo_small.svg"  alt="">
-</a>
+
 
 
 

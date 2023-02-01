@@ -33,6 +33,7 @@ body {
   top: 0;
   left: 15.5%;
   z-index: 10;
+  width: 114px;
 }
 
 /* Section 1 */
@@ -47,9 +48,16 @@ body {
   background-position-x: 21.5vw;
 }
 
+#home_large {
+  width: 328px;
+}
+
 .brands_div {
   display: inline-block;
   text-align: center;
+}
+#brands_div_1 {
+  padding-bottom: 35px;
 }
 
 #and_life_begins_txt {
@@ -59,7 +67,28 @@ body {
   left: 62.5%;
   top: 58px;
   margin: 0;
-  color: var(--brown1);
+  /* font-size: clamp(3rem, 25vmin, 8rem); */
+  --bg-size: 400%;
+  /* color: var(--brown1); */
+
+  --color-one: hsl(15 90% 55%);
+  --color-two: hsl(40 95% 55%);
+  background: linear-gradient(
+    90deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-one)
+  ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
 }
 #olala_txt {
   font-family: LeagueSpartan;
@@ -180,6 +209,8 @@ body {
   margin-top: 72px;
 }
 
+
+
 .change_photos_btn {
   width: 160px;
   height:32px;
@@ -235,6 +266,9 @@ body {
   }
   .brands_div {
     margin: 0 240px;
+  }
+  #brands_div_2 {
+    margin: 0 390px;
   }
   .side_photos_div {
     position: absolute;
@@ -412,7 +446,7 @@ body {
 @media all and (min-width: 1920.03px)
 {
   .floor {
-    height: calc(170 * 100vw / 1920);
+    height: 170px;
     background-size: 100%;
   }
 }
@@ -448,12 +482,13 @@ body {
 
 .showcase_div {
   outline: 2px solid var(--brown1);
-  /* padding-bottom: 10px; */
+  position: relative;
   margin: 2px 0;
   background-color: white;
 }
 .showcase {
   outline: 1px solid var(--brown1);
+  background-color: var(--offwhite1);
 }
 
 .showcase_side {
@@ -592,11 +627,11 @@ body {
     margin: 5px 0;
   }
   .showcase_item_pad_left {
-    margin-left: calc(15.2vw - 46.6px);
+    margin-left: calc(15vw - 46.6px);
   }
   
   .showcase_item_pad_right {
-    margin-right: calc(15.2vw - 46.6px);
+    margin-right: calc(15vw - 46.6px);
   }
   .showcase_large_item_div {
     border: 1px solid var(--brown1);
@@ -829,13 +864,8 @@ body {
   position: relative;
   height: 1080px;
   background-position-x: center;
-  z-index: 1;
 }
-#video_background {
-  position: absolute;
-  left: calc((100vw - 1920px - 15px) / 2);
-  height: 100%;
-}
+
 
 #brands_div_2 {
   margin-top: 72px;  
@@ -913,6 +943,24 @@ body {
 {
   #section_2 {
     background-size: 100%;
+  }
+  #video_background {
+    position: absolute;
+    width: 100%;
+  }
+}
+@media all and (max-width: 1920px)
+{
+  #video_background {
+    position: absolute;
+    left: calc((100vw - 1920px - 15px) / 2);
+    height: 100%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1349.97px)
+{
+  #video_background {
+    left: -292px;
   }
 }
 
@@ -1295,6 +1343,7 @@ body {
   background-position-y: 40px;
   text-align: center;
   position: relative;
+  background-color: var(--offwhite1);
 }
 #brands_div_3 {
   margin-top: 38px;
@@ -1349,6 +1398,23 @@ body {
 #google_map {
   outline: solid 1px var(--brown1);
 }
+#google_map_cover {
+  position: absolute;
+  width: 318px;
+  z-index: 5;
+  left: 0;
+  top: 79px;
+  outline: solid 1px var(--brown1);
+}
+#darken_map {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(102, 67, 50, 0.70);
+  position: absolute;
+  left:0;
+  top:0;
+}
+
 #contact_inner_div {
   position: relative;
   width: 318px;
@@ -1391,6 +1457,11 @@ body {
   height: 320px;
 }
 
+#change_season_div {
+  text-align: center;
+  padding: 30px 0;
+}
+
 @media all and (min-width: 768px) and (max-width: 1349.97px)
 {
   .fb_iframe_widget iframe {
@@ -1429,6 +1500,7 @@ body {
   height: 664px;
   background-position-x: center;
   position: relative;
+  background-color: var(--offwhite1);
 }
 #bottom_div {
   position: relative;
@@ -1473,6 +1545,12 @@ body {
   width: 13.28vw;
   display: inline-block;
 }
+.lb-caption {
+  font-family: LeagueSpartan;
+}
+.lb-number {
+  margin-top: 8px;
+}
 
 .copyright_txt {
   font-family: LeagueSpartan;
@@ -1510,5 +1588,11 @@ body {
   }
   #home_large_bottom {
     display: none;
+  }
+}
+@media all and (min-width: 1920.03px)
+{
+  #street {
+    background-size: 100%;
   }
 }
