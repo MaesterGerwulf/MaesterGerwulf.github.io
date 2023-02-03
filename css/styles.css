@@ -135,10 +135,10 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   display: inline-block;
+  vertical-align: top;
 }
 .brand_inner_div {
   position: relative;
-  height: 200px;
   background-size: 100%;
   border-radius: 8px;
   cursor: url("../images/Hand_Cyan_Right.svg"), auto;
@@ -163,60 +163,8 @@ body {
   color: var(--brown1);
 }
 
-#brand_logo_1 {
-  width: 90px;
-  height: 90px;
-  margin-top: 28px;
-}
-#brand_logo_2 {
-  width: 230px;
-  height: 45px;
-  left: 10px;
-  margin-top: 58px;
-}
-#brand_logo_3 {
-  width: 191px;
-  height: 45px;
-  left: 30px;
-  margin-top: 52px;
-}
-#brand_logo_4 {
-  width: 211px;
-  height: 57px;
-  left: 20px;
-  margin-top: 38px;
-}
-#brand_logo_5 {
-  width: 182px;
-  height: 50px;
-  left: 34px;
-  margin-top: 45px;
-}
-
 .flag {
   position: absolute;
-  top: 152px;
-  height: 24px;
-}
-.flag_w33 {
-  width: 33px;
-  left: 109px
-}
-.flag_w36 {
-  width: 36px;
-  left: 107px
-}
-.flag_w28 {
-  width: 28px;
-  left: 111px
-}
-.flag_w41 {
-  width: 41px;
-  left: 102px
-}
-.flag_w45_5 {
-  width: 45.5px;
-  left: 103px
 }
 
 .side_photos_div {
@@ -257,36 +205,26 @@ body {
   height: 33px;
 }
 
+.side_photo_rooms_div {
+  position: relative;
+  background-image: url("../images/Window.svg");
+}
+.side_photo_rooms {
+  position: absolute;
+}
+
 @media all and (min-width: 1350px)
 {
   .and_life_begins_txt {
     font-size: 80px;
   }
   .brand_div {
-    padding-left: calc(9vw - 110px);
-    padding-right: calc(9vw - 110px);
+    padding: 12px calc(9vw - 110px);
   }
   .brand_div_1 {
     padding: 12px calc(17.5vw - 89px);
   }
-  #stokke_div {
-  }
-}
-@media all and (min-width: 768px) and (max-width: 1349.97px)
-{
-  .and_life_begins_txt {
-    font-size: 52px;
-  }
-  .brand_div {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  .brand_div_1 {
-    padding: 12px 148px;
-  }
-}
-@media all and (min-width: 768px)
-{
+
   #stokke_div {
     left: calc(50vw - 132.5px);
     position: absolute;
@@ -320,6 +258,29 @@ body {
   .side_photos_div_right {
     right: calc(2.6vw - 18px);
   }
+  
+  .change_photo_divs_div {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1349.97px)
+{
+  .and_life_begins_txt {
+    font-size: 52px;
+  }
+  .brand_div {
+    padding: 12px 12px;
+  }
+  .brand_div_1 {
+    padding: 12px 148px;
+  }
+}
+
+@media all and (min-width: 768px)
+{
   .side_photo_div {
     margin: 24px 0;
   }
@@ -335,15 +296,12 @@ body {
     margin: 16px 0;
   }
   .side_photo_rooms_div {
-    position: relative;
     width: 240px;
     height: 240px;
-    background-image: url("../images/Window.svg");
     margin: 24px 0;
     margin-left: -4px;
   }
   .side_photo_rooms {
-    position: absolute;
     bottom: 25px;
     left: 17px;
     width: 206px;
@@ -351,30 +309,279 @@ body {
   .change_rooms_btn {
     margin-bottom: 28px;
   }
-  .change_photo_divs_div {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+  
+  #brand_logo_1 {
+    width: 90px;
+    height: 90px;
+    margin-top: 28px;
+  }
+  #brand_logo_2 {
+    width: 230px;
+    height: 45px;
+    margin-top: 58px;
+  }
+  #brand_logo_3 {
+    width: 191px;
+    height: 45px;
+    margin-top: 52px;
+  }
+  #brand_logo_4 {
+    width: 211px;
+    height: 57px;
+    margin-top: 38px;
+  }
+  #brand_logo_5 {
+    width: 182px;
+    height: 50px;
+    margin-top: 45px;
+  }
+  #brand_logo_6 { 
+    width: 230px;
+    height: 46px;
+    left: 10px;
+    top: 53px;
+  }
+  #brand_logo_7 { 
+    width: 90px;
+    height: 99.5px;
+    left: 80px;
+    top: 28px;
+  }
+  #brand_logo_8 { 
+    width: 163.5px;
+    height: 55px;
+    left: 43px;
+    top: 47px;
+  }
+  #brand_logo_9 { 
+    width: 166px;
+    height: 74px;
+    left: 42px;
+    top: 39px;
+  }
+  #brand_logo_10 {
+    width: 230px;
+    height: 51px;
+    left: 11.5px;
+    top: 59px;
+  }
+  #brand_logo_11 { 
+    width: 127px;
+    height: 90px;
+    left: 61px;
+    top: 33px;
+  }
+  #brand_logo_12 { 
+    width: 211px;
+    height: 34px;
+    left: 20px;
+    top: 61px;
+  }
+  #brand_logo_13 {
+    width: 232px;
+    height: 65px;
+    left: 10px;
+    top: 37px;
+  }
+  #brand_logo_14 { 
+    width: 211px;
+    height: 77px;
+    left: 22px;
+    top: 51px;
+  }
+
+  .flag {
+    top: 152px;
+    height: 24px;
+  }
+  .flag_w33 {
+    width: 33px;
+    left: 109px
+  }
+  .flag_w36 {
+    width: 36px;
+    left: 107px
+  }
+  .flag_w28 {
+    width: 28px;
+    left: 111px
+  }
+  .flag_w41 {
+    width: 41px;
+    left: 102px
+  }
+  .flag_w45_5 {
+    width: 45.5px;
+    left: 103px
+  }
+  
+  .brand_inner_div {
+    height: 200px;
   }
 }
-@media all and (max-width: 767.97px)
+
+@media all and (max-width: 1349.97px)
 {
-  .and_life_begins_txt {
-    display: none;
-  }
   .brand_div {
-    padding-left: calc(12.3vw - 34px);
-    padding-right: calc(12.3vw - 34px);
+    vertical-align: top;
+    padding: 12px calc(13vw - 90px);
   }
+
   .change_photo_divs_div {
     text-align: center;
   }
+
   .side_photos_div {
     position: relative;
     display: inline-block;
-    padding-left: calc((12.3vw - 34px) * 3 / 5);
-    padding-right: calc((12.3vw - 34px) * 3 / 5);
+    padding-left: calc(12.3vw - 35px);
+    padding-right: calc(12.3vw - 35px);
+  }
+
+  .side_photo_dream {
+    display: block;
+  }
+
+  #brands_div_2 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media all and (max-width: 767.97px)
+{
+  #brand_logo_1 {
+    width: 54px;
+    height: 54px;
+    margin-top: 16.8px;
+  }
+  #brand_logo_2 {
+    width: 138px;
+    height: 27px;
+    margin-top: 34.8px;
+  }
+  #brand_logo_3 {
+    width: 114.6px;
+    height: 27px;
+    margin-top: 31.2px;
+  }
+  #brand_logo_4 {
+    width: 126.6px;
+    height: 34.2px;
+    margin-top: 22.8px;
+  }
+  #brand_logo_5 {
+    width: 109.2px;
+    height: 30px;
+    margin-top: 27px;
+  }
+  #brand_logo_6 { 
+    width: 138px;
+    height: 27.6px;
+    left: 6px;
+    top: 31.8px;
+  }
+  #brand_logo_7 { 
+    width: 54px;
+    height: 59.7px;
+    left: 48px;
+    top: 16.8px;
+  }
+  #brand_logo_8 { 
+    width: 98.1px;
+    height: 33px;
+    left: 25.8px;
+    top: 28.2px;
+  }
+  #brand_logo_9 { 
+    width: 99.6px;
+    height: 44.4px;
+    left: 25.2px;
+    top: 23.4px;
+  }
+  #brand_logo_10 {
+    width: 138.0px;
+    height: 30.6px;
+    left: 6.9px;
+    top: 35.4px;
+  }
+  #brand_logo_11 { 
+    width: 76.2px;
+    height: 54px;
+    left: 36.6px;
+    top: 19.8px;
+  }
+  #brand_logo_12 { 
+    width: 126.6px;
+    height: 20.4px;
+    left: 12px;
+    top: 36.6px;
+  }
+  #brand_logo_13 {
+    width: 139.2px;
+    height: 39.0px;
+    left: 6.0px;
+    top: 22.2px;
+  }
+  #brand_logo_14 { 
+    width: 126.6px;
+    height: 46.2px;
+    left: 13.2px;
+    top: 30.6px;
+  }
+
+  .flag {
+    top: 91.2px;
+    height: 14.4px;
+  }
+  .flag_w33 {
+    width: 19.8px;
+    left: 65.4px
+  }
+  .flag_w36 {
+    width: 21.6px;
+    left: 64.2px
+  }
+  .flag_w28 {
+    width: 16.8px;
+    left: 66.6px
+  }
+  .flag_w41 {
+    width: 24.6px;
+    left: 61.2px
+  }
+  .flag_w45_5 {
+    width: 27.3px;
+    left: 61.8px
+  }
+
+  .brand_inner_div {
+    height: 120px;
+    border-radius: 4.8px;
+  }
+
+  .brand_name {
+    font-size: 22.8px;
+    line-height: 24px;
+  }
+
+  #brands_div_2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #home_large {
+    width: 300px;
+  }
+
+  .brand_div {
+    width: 150px;
+    height: 144px;
+    padding: 12px calc((12.3vw - 35px) * 3 / 5);
+  }
+  .side_photos_div {
+    padding-left: calc((12.3vw - 35px) * 3 / 5);
+    padding-right: calc((12.3vw - 35px) * 3 / 5);
   }
   .side_photo_div {
     margin: 24px 0;
@@ -388,11 +595,22 @@ body {
     width: 139.2px;
     height: 139.2px;
     margin: 16px 0;
-    display: block;
+  }
+  
+  .side_photo_rooms_div {
+    width: 144px;
+    height: 144px;
+    margin: 24px 0;
+    margin-left: -2.4px;
   }
   .side_photo_rooms {
-
+    bottom: 15px;
+    left: 10.2px;
+    width: 123.6px;
   }
+  /* .change_rooms_btn {
+    margin-bottom: 28px;
+  } */
   .change_photos_btn {
     visibility: hidden;
     position: absolute;
@@ -408,9 +626,17 @@ body {
   }
   #change_rooms_btn_1 {
     visibility: visible;
-    
   }
 }
+
+@media all and (max-width: 600px)
+{
+  #brands_div_2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media all and (min-width: 1921px)
 {
   .brand_div {
@@ -661,10 +887,10 @@ body {
     margin-top: 2.65vw;
   }
   .click_photo_div_1 {
-    left: 160px;
+    left: calc(17.5vw - 75px);
   }
   .click_photo_div_2 {
-    right: 160px;
+    right: calc(17.5vw - 75px);
   }
 }
 @media all and (max-width: 767.97px)
@@ -692,10 +918,17 @@ body {
     border: 1px solid var(--brown1);
   }
   .showcase_large_item {
-    width: 135px;
-    height: 135px;
+    width: 202.5px;
+    height: 202.5px;
     margin: 8px 24px;
   }
+  .click_photo_div {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1349.97px)
+{
   .showcase_logo_div {
     display: none;
   }
@@ -860,30 +1093,6 @@ body {
 .brand_name_2 {
   color: var(--lightbrown);
 }
-#brand_logo_6 { 
-  width: 230px;
-  height: 46px;
-  left: 10px;
-  top: 53px;
-}
-#brand_logo_7 { 
-  width: 90px;
-  height: 99.5px;
-  left: 80px;
-  top: 28px;
-}
-#brand_logo_8 { 
-  width: 163.5px;
-  height: 55px;
-  left: 43px;
-  top: 47px;
-}
-#brand_logo_9 { 
-  width: 166px;
-  height: 74px;
-  left: 42px;
-  top: 39px;
-}
 
 .brand_inner_div_2 {
   background-image: url("../images/brand_back_2.svg");
@@ -945,16 +1154,8 @@ body {
     /* display: none; */
   }
 }
-@media all and (min-width: 768px) and (max-width: 1349.97px)
-{
-  #video_background {
-    left: -292px;
-  }
-  #video_background {
-    display: none;
-  }
-}
-@media all and (max-width: 768px)
+
+@media all and (max-width: 1349.97px)
 {
   #video_background {
     display: none;
@@ -964,7 +1165,6 @@ body {
     background-size: cover;
   }
 }
-
 
 /* Section 3 */
 
@@ -1234,7 +1434,6 @@ body {
 
 #section_3 {
   background-image: url("../images/butterflies_back.svg");
-  /* height: 912px; */
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 40px;
@@ -1244,37 +1443,7 @@ body {
 }
 #brands_div_3 {
   margin-top: 38px;
-}
-
-#brand_logo_10 {
-  width: 230px;
-  height: 51px;
-  left: 11.5px;
-  top: 59px;
-}
-#brand_logo_11 { 
-  width: 127px;
-  height: 90px;
-  left: 61px;
-  top: 33px;
-}
-#brand_logo_12 { 
-  width: 211px;
-  height: 34px;
-  left: 20px;
-  top: 61px;
-}
-#brand_logo_13 {
-  width: 232px;
-  height: 65px;
-  left: 10px;
-  top: 37px;
-}
-#brand_logo_14 { 
-  width: 211px;
-  height: 77px;
-  left: 22px;
-  top: 51px;
+  padding-bottom: 35px;
 }
 
 .brand_inner_div_3 {
@@ -1359,14 +1528,7 @@ body {
   padding: 30px 0;
 }
 
-@media all and (min-width: 768px) and (max-width: 1349.97px)
-{
-  .fb_iframe_widget iframe {
-    display: none;
-  }
-}
-
-@media all and (min-width: 768px)
+@media all and (min-width: 1200px)
 {
   #contact_div {
     width: 1176px;
@@ -1380,14 +1542,20 @@ body {
     display: inline-block;
   }
 }
-@media all and (max-width: 767.97px)
+@media all and (max-width: 1200px)
 {
   .contact_div_piece {
     display: block;
     width: 318px;
     margin: 24px auto;
   }
-  
+}
+
+@media all and (max-width: 1349.97px)
+{
+  #change_season_btn {
+    display: none;;
+  }
 }
 
 /* Street */
@@ -1406,7 +1574,6 @@ body {
 
 .photo_viewer {
   display: inline-block;
-  /* height: 15.4vw; */
   background-color: var(--brown1);
   vertical-align: top;
 }
@@ -1419,19 +1586,8 @@ body {
   border-radius: 10px 0 0 0;
 }
 
-.click_photo_div_bottom {
-  margin: 0.3vw 0;
-}
-
 .click_photo_bottom_txt {
   color: var(--offwhite1);
-  font-size: 1.25vw;
-  line-height: 1.25vw;
-  margin: 0.365vw 0 0 0.26vw;
-}
-.click_photo_hand_bottom {
-  width: 1.72vw;
-  height: 1.72vw;
 }
 
 .store_photos_div {
@@ -1467,6 +1623,19 @@ body {
 }
 @media all and (min-width: 768px)
 {
+  .click_photo_div_bottom {
+    margin: 0.3vw 0;
+  }
+  .click_photo_bottom_txt {
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    margin: 0.365vw 0 0 0.26vw;
+  }
+  .click_photo_hand_bottom {
+    width: 1.72vw;
+    height: 1.72vw;
+  }
+
   .photo_viewer {
     width: 41.5%;
   }
@@ -1477,14 +1646,41 @@ body {
 
 @media all and (max-width: 767.97px)
 {
+  
   .photo_viewer {
     width: 100%;
+  }
+  #photo_viewer_1 {
+    border-radius: 10px 10px 0 0;
+  }
+  #photo_viewer_2 {
+    border-radius: 0;
   }
   .store_photo {
     width: 30vw;
   }
   #home_large_bottom {
     display: none;
+  }
+  #pv2_click_photo {
+    display: none;
+  }
+  .click_photo_div_bottom {
+    margin: 0.6vw 0;
+  }
+  .click_photo_bottom_txt {
+    color: var(--offwhite1);
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    margin: 0.730vw 0 0 0.52vw;
+  }
+  .click_photo_hand_bottom {
+    width: 3.44vw;
+    height: 3.44vw;
+  }
+
+  .copyright_txt {
+    font-size: 1.7vw;
   }
 }
 @media all and (min-width: 1920.03px)

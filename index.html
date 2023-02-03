@@ -613,7 +613,6 @@
 
   <p class="olala_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
 
-
   <div id="contact_div">
 
     <div class="contact_div_piece" id="google_map" style="position: relative; height: 320px; vertical-align: top;">
@@ -624,7 +623,10 @@
         <source data-src="Google Map Cover.mp4" type="video/mp4">
       </video>
     </div>
-  
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="nbKkP4OI"></script>
+    
     <div class="contact_div_piece" id="contact_inner_div">
       <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
       <p id="contact_txt">Contact</p>
@@ -642,8 +644,6 @@
   
   </div>
 
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="nbKkP4OI"></script>
   <div id="change_season_div">
     <div id="change_season_btn" class="change_photos_btn change_seasons_btn change_photos_btn_en">
       <span>CHANGE SEASONS</span>
@@ -688,7 +688,7 @@
   </a>
 
   <div id="photo_viewer_2" class="photo_viewer">
-    <div class="click_photo_div_bottom">
+    <div id="pv2_click_photo" class="click_photo_div_bottom">
       <img class="click_photo_hand click_photo_hand_bottom" src="images/Hand_Cyan_Left.svg" alt="">
       <p class="click_photo_txt click_photo_bottom_txt">Click Photo</p>
     </div>
