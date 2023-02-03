@@ -7,20 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/street.css">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
   <title>O'lala</title>
   <link rel="stylesheet" href="css/lightbox.min.css">
-  <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body onload="onloadd()">
-<!-- 
-  replace brand border
-  and life begins      
 
--->
 <a href="/">
   <img id="home_btn_small" src="images/olala_logo_small.svg"  alt="">
 </a>
+
+<button disabled id="en_button" onclick="changeLanguageTo('en')" style="position: absolute; left:500px; top: 0; z-index: 3;">asd</button>
+<button id="ge_button" onclick="changeLanguageTo('ge')" style="position: absolute; left:550px; top: 0; z-index: 3;">asd</button>
 
 <div id="section_1" class="section">
   
@@ -30,17 +27,17 @@
       <img id="home_large" src="images/olala_logo_large.svg" alt="Olala Logo Large">
     </a>
 
-    <h3 id="and_life_begins_txt">... and life begins ...</h3>
+    <h3 id="and_life_begins_txt_en" class="and_life_begins_txt">... and life begins ...</h3>
 
-    <p id="olala_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+    <p id="olala_txt_en" class="olala_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
 
-    <h3 class="our_brands_txt">Our Brands</h3>
+    <h3 class="our_brands_txt our_brands_txt_en">Our Brands</h3>
 
     <div class="brand_div brand_div_1" id="stokke_div">
       <h4 class="brand_name brand_name_1">Stokke</h4>
       <a href="https://stokke.com">
         <div class="brand_inner_div brand_inner_div_1">
-          <img class="absolute" id="brand_logo_1" src="images/logos/Stokke.svg" alt="Stokke Logo">
+          <img id="brand_logo_1" src="images/logos/Stokke.svg" alt="Stokke Logo">
           <img class="flag flag_w33" src="images/flags/Flag_of_Norway.svg" alt="Norway Flag">
         </div>
       </a>
@@ -50,7 +47,7 @@
       <h4 class="brand_name brand_name_1">Bugaboo</h4>
       <a href="https://bugaboo.com">
         <div class="brand_inner_div brand_inner_div_1">
-          <img class="absolute" id="brand_logo_2" src="images/logos/Bugaboo.svg" alt="Bugaboo Logo">
+          <img id="brand_logo_2" src="images/logos/Bugaboo.svg" alt="Bugaboo Logo">
           <img class="flag flag_w36" src="images/flags/Flag_of_the_Netherlands.svg" alt="Netherlands Flag">
         </div>
       </a>
@@ -60,7 +57,7 @@
       <h4 class="brand_name brand_name_1">Bloom Baby</h4>
       <a href="https://bloombaby.com">
         <div class="brand_inner_div brand_inner_div_1">
-          <img class="absolute" id="brand_logo_3" src="images/logos/Bloom_Baby.png" alt="Bloom Baby Logo">
+          <img id="brand_logo_3" src="images/logos/Bloom_Baby.png" alt="Bloom Baby Logo">
           <img class="flag flag_w36" src="images/flags/Flag_of_Hong_Kong.svg" alt="Hong Kong Flag">
         </div>
       </a>
@@ -70,7 +67,7 @@
       <h4 class="brand_name brand_name_1">BABYZEN</h4>
       <a href="https://babyzen.com">
         <div class="brand_inner_div brand_inner_div_1">
-          <img class="absolute" id="brand_logo_4" src="images/logos/Baby_Zen.svg" alt="Baby Zen Logo">
+          <img id="brand_logo_4" src="images/logos/Baby_Zen.svg" alt="Baby Zen Logo">
           <img class="flag flag_w33" src="images/flags/Flag_of_Norway.svg" alt="Norway Flag">
         </div>
       </a>
@@ -80,7 +77,7 @@
       <h4 class="brand_name brand_name_1">BeSafe</h4>
       <a href="https://besafe.com">
         <div class="brand_inner_div brand_inner_div_1">
-          <img class="absolute" id="brand_logo_5" src="images/logos/Be_Safe.svg" alt="Be Safe Logo">
+          <img id="brand_logo_5" src="images/logos/Be_Safe.svg" alt="Be Safe Logo">
           <img class="flag flag_w33" src="images/flags/Flag_of_Norway.svg" alt="Norway Flag">
         </div>
       </a>
@@ -92,61 +89,60 @@
   <div class="change_photo_divs_div">
     <div class="side_photos_div side_photos_div_left side_photos_div_1">
 
-      <div id="change_photos_btn_1" class="change_photos_btn">
-        CHANGE PHOTOS
+      <div id="change_photos_btn_1" class="change_photos_btn change_photos_btn_en">
+        <span>CHANGE PHOTOS</span>
         <div class="change_photos_hand">
           <img id="change_photos_hand_1" src="images/Hand_White_Right.svg" alt="">
         </div>
       </div>
   
       <div class="side_photo_div" style="background-image: url(images/Frame_4.svg);">
-        <img class="side_photo" src="images/photos/photo_1_1.png" alt="Baby photos">
+        <img class="side_photo" src="images/photos/photo_1_1.webp" alt="Baby photos">
       </div>
       
       <div class="side_photo_div" style="background-image: url(images/Frame_2.svg);">
-        <img class="side_photo" src="images/photos/photo_1_2.png" alt="Baby photos">
+        <img class="side_photo" src="images/photos/photo_1_2.webp" alt="Baby photos">
       </div>
       
       <div class="side_photo_div" style="background-image: url(images/Frame_4.svg);">
-        <img class="side_photo" src="images/photos/photo_1_3.png" alt="Baby photos">
+        <img class="side_photo" src="images/photos/photo_1_3.webp" alt="Baby photos">
       </div>
     </div>
   
     <div class="side_photos_div side_photos_div_right side_photos_div_1">
-      <div id="change_photos_btn_2" class="change_photos_btn">
-        CHANGE PHOTOS
+      <div id="change_photos_btn_2" class="change_photos_btn change_photos_btn_en">
+        <span>CHANGE PHOTOS</span>
         <div class="change_photos_hand">
           <img id="change_photos_hand_2" src="images/Hand_White_Right.svg" alt="">
         </div>
       </div>
       
       <div class="side_photo_div" style="background-image: url(images/Frame_5.svg);">
-        <img class="side_photo" src="images/photos/photo_1_4.png" alt="Baby photos">
+        <img class="side_photo" src="images/photos/photo_1_4.webp" alt="Baby photos">
       </div>
       <div class="side_photo_div" style="background-image: url(images/Frame_3.svg);">
-        <img class="side_photo" src="images/photos/photo_1_5.png" alt="Baby photos">
+        <img class="side_photo" src="images/photos/photo_1_5.webp" alt="Baby photos">
       </div>
       <div class="side_photo_div" style="background-image: url(images/Frame_4.svg);">
-        <img class="side_photo" src="images/photos/photo_1_6.png" alt="Baby photos">
+        <img class="side_photo" src="images/photos/photo_1_6.webp" alt="Baby photos">
       </div>
     </div>
   </div>
   
 </div>
 
-<!-- bridge 1 -->
-<div id="bridge_1">
+<div id="bridge_1" class="bridge">
   <div id="bridge_1_wall">
-      <img id="brown_wall_img_1" class="product brown_wall_img" src="images/products/brown_wall_photo_1.png" loading="lazy" alt="" />
-      <img id="brown_wall_img_2" class="product brown_wall_img" src="images/products/brown_wall_photo_2.png" loading="lazy" alt="" />
-      <img id="brown_wall_img_3" class="product brown_wall_img" src="images/products/brown_wall_photo_3.png" loading="lazy" alt="" />
+      <img id="brown_wall_img_1" class="product brown_wall_img" data-src="images/products/brown_wall_photo_1.png" alt="" />
+      <img id="brown_wall_img_2" class="product brown_wall_img" data-src="images/products/brown_wall_photo_2.png" alt="" />
+      <img id="brown_wall_img_3" class="product brown_wall_img" data-src="images/products/brown_wall_photo_3.png" alt="" />
   </div>
   <div id="floor_1" class="floor">
-    <img id="footsteps_2" class="product" src="images/footsteps_2.svg" loading="lazy" alt="Footsteps">
-    <img id="bridge_1_img_2_1" class="product animation" src="images/products/Stokke_Tripp_Trapp_Chair.png" loading="lazy" alt="Stokke_Tripp_Trapp_Chair" />
-    <img id="bridge_1_img_2_2" class="product animation" src="images/products/Stokke_Nomi_Chair.png" loading="lazy" alt="Stokke_Nomi_Chair" />
-    <img id="bridge_1_img_2_3" class="product animation" src="images/products/Trois Kilos Sept & Bizzi Growin.png" loading="lazy" alt="Trois Kilos Sept & Bizzi Growin Product" />
-    <img id="bridge_1_img_2_4" class="product animation" src="images/products/Stokke_Nomi_Chair_2.png" loading="lazy" alt="Stokke_Nomi_Chair" />
+    <img id="footsteps_2" class="product" data-src="images/footsteps_2.svg" alt="Footsteps">
+    <img id="bridge_1_img_2_1" class="product animation" data-src="images/products/Stokke_Tripp_Trapp_Chair.png" alt="Stokke_Tripp_Trapp_Chair" />
+    <img id="bridge_1_img_2_2" class="product animation" data-src="images/products/Stokke_Nomi_Chair.png" alt="Stokke_Nomi_Chair" />
+    <img id="bridge_1_img_2_3" class="product animation" data-src="images/products/Trois_Kilos_Sept_&_Bizzi_Growin.png" alt="Trois Kilos Sept & Bizzi Growin Product" />
+    <img id="bridge_1_img_2_4" class="product animation" data-src="images/products/Stokke_Nomi_Chair_2.png" alt="Stokke_Nomi_Chair" />
   </div>
 </div>
 
@@ -155,56 +151,64 @@
   <div class="showcase">
     <div class="showcase_side">
        <div class="showcase_line">
-          <img src="images/Showcase_Wave_Left.svg" class="showcase_wave" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase_items/Stokke_Tripp_Trapp_Chair_80.png" loading="lazy" alt="SnoozeBaby_Clothes">
-          <img class="showcase_item showcase_item_pad_left" name="Snoozebaby" src="images/showcase_items/Stokke_Tripp_Trapp_Chair_Baby_Set_80.png" loading="lazy" alt="dream">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/Stokke_Tripp_Trapp_Chair_Newborn_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/Stokke_Nomi_Chair_Junior_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/Stokke_Nomi_Chair_Newborn_80.png" loading="lazy" alt="">
+          <img src="images/Showcase_Wave_Left.svg" class="showcase_wave" alt="">
+          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Tripp_Trapp_Chair_80.webp" alt="Stokke_Tripp_Trapp_Chair">
+          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Tripp_Trapp_Chair_Baby_Set_80.webp" alt="Stokke_Tripp_Trapp_Chair_Baby_Set">
+          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Tripp_Trapp_Chair_Newborn_80.webp" alt="Stokke_Tripp_Trapp_Chair_Newborn">
+          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Nomi_Chair_Junior_80.webp" alt="Stokke_Nomi_Chair_Junior">
+          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Nomi_Chair_Newborn_80.webp" alt="Stokke_Nomi_Chair_Newborn">
        </div>
        <div class="showcase_line showcase_line_middle">
-          <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+          <img class="showcase_item showcase_item_pad_right" name="Moulin Roty" src="images/showcase/Moulin_Roty_Bedding_2_80.webp" alt="Moulin_Roty_Bedding_2">
+          <img class="showcase_item showcase_item_pad_right" name="Bugaboo" src="images/showcase/Bugaboo_Play_Yard_80.webp" alt="Bugaboo_Play_Yard">
+          <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_MuTable_Scenes_80.webp" alt="Stokke_MuTable_Scenes">
+          <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Flexi_Bath_80.webp" alt="Stokke_Flexi_Bath">
+          <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Sleepi_Dresser_&_Changer_80.webp" alt="Stokke_Sleepi_Dresser_&_Changer">
        </div>
        <div class="showcase_line">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-          <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+          <img class="showcase_item showcase_item_pad_left" name="Snoozebaby" src="images/showcase/SnoozeBaby_Clothes_3_80.webp" alt="SnoozeBaby_Clothes_3">
+          <img class="showcase_item showcase_item_pad_left" name="Snoozebaby" src="images/showcase/SnoozeBaby_Clothes_1_80.webp" alt="SnoozeBaby_Clothes_1">
+          <img class="showcase_item showcase_item_pad_left" name="Bizzi Growin" src="images/showcase/Bizzi_Growin_Sleeping_Bags_80.webp" alt="Bizzi_Growin_Sleeping_Bags">
+          <img class="showcase_item showcase_item_pad_left" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Bibs_Newborn_80.webp" alt="Trois_Kilos_Sept_Bibs_Newborn">
+          <img class="showcase_item showcase_item_pad_left" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Bibs_Silicone_80.webp" alt="Trois_Kilos_Sept_Bibs_Silicone">
        </div>
     </div>
    
     <div class="showcase_large_item_div">
-        <img src="images/Showcase_Wave_Middle.svg" class="showcase_wave" loading="lazy" alt="">
-       <img id="showcase_1_large_item" class="showcase_large_item" src="images/showcase_items/SnoozeBaby_Clothes_270.png" loading="lazy" alt="">
+      <div class="showcase_logo_div showcase_logo_div_left">
+        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
+      </div>
+
+      <img src="images/Showcase_Wave_Middle.svg" class="showcase_wave showcase_wave_middle" alt="">
+      <img id="showcase_1_large_item" class="showcase_large_item" src="images/showcase/Stokke_MuTable_Scenes_270.jpg" alt="">
+
+      <div class="showcase_logo_div showcase_logo_div_right">
+        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
+      </div>
     </div>
    
     <div class="showcase_side">
       <div class="showcase_line">
-        <img src="images/Showcase_Wave_Right.svg" class="showcase_wave" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+        <img src="images/Showcase_Wave_Right.svg" class="showcase_wave" alt="">
+        <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Steps_and_Munch_3_80.webp" alt="Stokke_Steps_and_Munch_3">
+        <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Steps_and_Munch_2_80.webp" alt="Stokke_Steps_and_Munch_2">
+        <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Steps_and_Munch_1_80.webp" alt="Stokke_Steps_and_Munch_1">
+        <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Clikk_High_Chair_80.webp" alt="Stokke_Clikk_High_Chair">
+        <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Sleepi_Bed_80.webp" alt="Stokke_Sleepi_Bed">
       </div>
       <div class="showcase_line showcase_line_middle">
-        <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+        <img class="showcase_item showcase_item_pad_left" name="Pearhead" src="images/showcase/Pearhead_Piggy_Bank_80.webp" alt="Pearhead_Piggy_Bank">
+        <img class="showcase_item showcase_item_pad_left" name="Pearhead" src="images/showcase/Pearhead_Keepsakes_Babyprint_80.webp" alt="Pearhead_Keepsakes_Babyprint">
+        <img class="showcase_item showcase_item_pad_left" name="Pearhead" src="images/showcase/Pearhead_Frames_1_80.webp" alt="Pearhead_Frames_1">
+        <img class="showcase_item showcase_item_pad_left" name="Pearhead" src="images/showcase/Pearhead_Frames_2_80.webp" alt="Pearhead_Frames_2">
+        <img class="showcase_item showcase_item_pad_left" name="Pearhead" src="images/showcase/Pearhead_Keepsakes_InkPad_80.webp" alt="Pearhead_Keepsakes_InkPad">
       </div>
       <div class="showcase_line">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-        <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+        <img class="showcase_item showcase_item_pad_right" name="SnoozeBaby" src="images/showcase/SnoozeBaby_Blankets_2_80.webp" alt="SnoozeBaby_Blankets_2">
+        <img class="showcase_item showcase_item_pad_right" name="SnoozeBaby" src="images/showcase/SnoozeBaby_Blankets_1_80.webp" alt="SnoozeBaby_Blankets_1">
+        <img class="showcase_item showcase_item_pad_right" name="Moulin Roty" src="images/showcase/Moulin_Roty_Bedding_80.webp" alt="Moulin_Roty_Bedding">
+        <img class="showcase_item showcase_item_pad_right" name="Bizzi Growin" src="images/showcase/Bizzi_Growin_Koochicoo_Blankets_80.webp" alt="Bizzi_Growin_Koochicoo_Blankets">
+        <img class="showcase_item showcase_item_pad_right" name="Bizzi Growin" src="images/showcase/Bizzi_Growin_Knitted_Blankets_80.webp" alt="Bizzi_Growin_Knitted_Blankets">
       </div>
    </div>
 
@@ -213,14 +217,14 @@
   <div class="showcase_below">
 
     <div class="click_photo_div click_photo_div_1">
-      <img class="click_photo_hand" src="images/Hand_Cyan_Left.svg" loading="lazy" alt="">
+      <img class="click_photo_hand" src="images/Hand_Cyan_Left.svg" alt="">
       <p class="click_photo_txt">Click Photo</p>
     </div>
 
     <p class="showcase_item_name" id="showcase_1_item_name">Stokke</p>
 
     <div class="click_photo_div click_photo_div_2">
-      <img class="click_photo_hand" src="images/Hand_Cyan_Left.svg" loading="lazy" alt="">
+      <img class="click_photo_hand" src="images/Hand_Cyan_Left.svg" alt="">
       <p class="click_photo_txt">Click Photo</p>
     </div>
 
@@ -228,53 +232,61 @@
 
 </div>
 
-<div id="bridge_2">
-  <img class="product bridge_2_img_1" id="bridge_2_img_1_1" src="images/products/Pearhead_Keepsakes_Babyprint_1.png" loading="lazy" alt="Pearhead_Keepsakes_Babyprint">
-  <img class="product bridge_2_img_1" id="bridge_2_img_1_2" src="images/products/Pearhead_Keepsakes_Babyprint_2.png" loading="lazy" alt="Pearhead_Keepsakes_Babyprint">
-  <img class="product bridge_2_img_1" id="bridge_2_img_1_3" src="images/products/Pearhead_Keepsakes_Babyprint_3.png" loading="lazy" alt="Pearhead_Keepsakes_Babyprint">
-  <img class="product bridge_2_img_1" id="bridge_2_img_1_4" src="images/products/Pearhead_Keepsakes_Babyprint_4.png" loading="lazy" alt="Pearhead_Keepsakes_Babyprint">
+<div id="bridge_2" class="bridge">
+  <img class="product bridge_2_img_1" id="bridge_2_img_1_1" data-src="images/products/Pearhead_Keepsakes_Babyprint_1.png" alt="Pearhead_Keepsakes_Babyprint">
+  <img class="product bridge_2_img_1" id="bridge_2_img_1_2" data-src="images/products/Pearhead_Keepsakes_Babyprint_2.png" alt="Pearhead_Keepsakes_Babyprint">
+  <img class="product bridge_2_img_1" id="bridge_2_img_1_3" data-src="images/products/Pearhead_Keepsakes_Babyprint_3.png" alt="Pearhead_Keepsakes_Babyprint">
+  <img class="product bridge_2_img_1" id="bridge_2_img_1_4" data-src="images/products/Pearhead_Keepsakes_Babyprint_4.png" alt="Pearhead_Keepsakes_Babyprint">
 
   <div class="floor" id="floor_2"></div>
 
-  <img class="product" id="footsteps_3" src="images/footsteps_3.svg" alt="">
-  <img class="product animation" id="bridge_2_img_2_1" src="images/products/Bizzi_Growin_Scene.png" loading="lazy" alt="Bizzi_Growin_Scene">
-  <img class="product animation" id="bridge_2_img_2_2" src="images/products/JetKids_by_Stokke.png" loading="lazy" alt="JetKids_by_Stokke">
-  <img class="product animation" id="bridge_2_img_2_3" src="images/products/Stokke_Flexi_Bath.png" loading="lazy" alt="Stokke_Flexi_Bath">
-  <img class="product animation" id="bridge_2_img_2_4" src="images/products/Pearhead_Piggy_Bank.png" loading="lazy" alt="Pearhead_Piggy_Bank">
-  <img class="product animation" id="bridge_2_img_2_5" src="images/products/Bizzi_Growin_Scenes.png" loading="lazy" alt="Bizzi_Growin_Scenes">
-  <img class="product animation" id="bridge_2_img_2_6" src="images/products/SnoozeBaby_Scene.png" loading="lazy" alt="SnoozeBaby_Scene">
-  <img class="product animation" id="bridge_2_img_2_7" src="images/products/Bizzi_Growin_Scene_2.png" loading="lazy" alt="Bizzi_Growin_Scene">
-  <img class="product animation" id="bridge_2_img_2_8" src="images/products/Moulin_Roty_Fish_And_Bugaboo.png" loading="lazy" alt="Moulin_Roty_Fish_And_Bugaboo">
+  <img class="product" id="footsteps_3" data-src="images/footsteps_3.svg" alt="">
+  <img class="product animation" id="bridge_2_img_2_1" data-src="images/products/Bizzi_Growin_Scene.png" alt="Bizzi_Growin_Scene">
+  <img class="product animation" id="bridge_2_img_2_2" data-src="images/products/JetKids_by_Stokke.png" alt="JetKids_by_Stokke">
+  <img class="product animation" id="bridge_2_img_2_3" data-src="images/products/Stokke_Flexi_Bath.png" alt="Stokke_Flexi_Bath">
+  <img class="product animation" id="bridge_2_img_2_4" data-src="images/products/Pearhead_Piggy_Bank.png" alt="Pearhead_Piggy_Bank">
+  <img class="product animation" id="bridge_2_img_2_5" data-src="images/products/Bizzi_Growin_Scenes.png" alt="Bizzi_Growin_Scenes">
+  <img class="product animation" id="bridge_2_img_2_6" data-src="images/products/SnoozeBaby_Scene.png" alt="SnoozeBaby_Scene">
+  <img class="product animation" id="bridge_2_img_2_7" data-src="images/products/Bizzi_Growin_Scene_2.png" alt="Bizzi_Growin_Scene">
+  <img class="product animation" id="bridge_2_img_2_8" data-src="images/products/Moulin_Roty_Fish_And_Bugaboo.png" alt="Moulin_Roty_Fish_And_Bugaboo">
 
-  <img class="product" id="bridge_2_img_3_1" src="images/products/Trois_Kilos_Sept_Rocker.png" loading="lazy" alt="Trois_Kilos_Sept_Rocker">
-  <img class="product" id="bridge_2_img_3_2" src="images/products/Trois_Kilos_Sept_Musical_Mobile_1.png" loading="lazy" alt="Trois_Kilos_Sept_Musical_Mobile">
-  <img class="product" id="bridge_2_img_3_3" src="images/products/Trois_Kilos_Sept_Musical_Mobile_2.png" loading="lazy" alt="Trois_Kilos_Sept_Musical_Mobile">
-  <img class="product" id="bridge_2_img_3_4" src="images/products/Moulin_Roty_Cat.png" loading="lazy" alt="Moulin_Roty_Cat">
+  <div class="absolute" id="bridge_2_img_3_div_1">
+    <img class="product animation" id="bridge_2_img_3_1" data-src="images/products/Trois_Kilos_Sept_Rocker.png" alt="">
+  </div>
+  <div class="absolute" id="bridge_2_img_3_div_2">
+    <img class="product animation" id="bridge_2_img_3_2" data-src="images/products/Trois_Kilos_Sept_Musical_Mobile_1.png" alt="">
+  </div>
+  <div class="absolute" id="bridge_2_img_3_div_3">
+    <img class="product animation" id="bridge_2_img_3_3" data-src="images/products/Trois_Kilos_Sept_Musical_Mobile_2.png" alt="">
+  </div>
+  <div class="absolute" id="bridge_2_img_3_div_4">
+    <img class="product animation" id="bridge_2_img_3_4" data-src="images/products/Moulin_Roty_Cat.png" alt="">
+  </div>
 
-  <img class="product animation" id="bridge_2_img_4_1" src="images/products/Moulin_Roty_Cat_2.png" loading="lazy" alt="Moulin_Roty_Cat">
-  <img class="product animation" id="bridge_2_img_4_2" src="images/products/Moulin_Roty_Elephant.png" loading="lazy" alt="Moulin_Roty_Elephant">
-  <img class="product animation" id="bridge_2_img_4_3" src="images/products/Moulin_Roty_Spiral.png" loading="lazy" alt="Moulin_Roty_Spiral">
-  <img class="product animation" id="bridge_2_img_4_4" src="images/products/Moulin_Roty_Scene.png" loading="lazy" alt="Moulin_Roty_Scene">
-  <img class="product animation" id="bridge_2_img_4_5" src="images/products/Moulin_Roty_Toy.png" loading="lazy" alt="Moulin_Roty_Toy">
-  <img class="product animation" id="bridge_2_img_4_6" src="images/products/Moulin_Roty_Bear.png" loading="lazy" alt="Moulin_Roty_Bear">
+  <img class="product animation" id="bridge_2_img_4_1" data-src="images/products/Moulin_Roty_Cat_2.png" alt="Moulin_Roty_Cat">
+  <img class="product animation" id="bridge_2_img_4_2" data-src="images/products/Moulin_Roty_Elephant_1.png" alt="Moulin_Roty_Elephant">
+  <img class="product animation" id="bridge_2_img_4_3" data-src="images/products/Moulin_Roty_Spiral.png" alt="Moulin_Roty_Spiral">
+  <img class="product animation" id="bridge_2_img_4_4" data-src="images/products/Moulin_Roty_Scene.png" alt="Moulin_Roty_Scene">
+  <img class="product animation" id="bridge_2_img_4_5" data-src="images/products/Moulin_Roty_Toy.png" alt="Moulin_Roty_Toy">
+  <img class="product animation" id="bridge_2_img_4_6" data-src="images/products/Moulin_Roty_Bear.png" alt="Moulin_Roty_Bear">
 </div>
 
 <div id="section_2" class="section">
 
-  <video autoplay muted playsinline id="video_background" poster="images/night_back.png">
+  <video autoplay muted id="video_background" poster="images/night_back.png">
     <source data-src="Background - Night.mp4" type="video/mp4">
   </video>
   
   <div id="brands_div_2" class="brands_div">
     
-    <h3 class="our_brands_txt">Our Brands</h3>
+    <h3 class="our_brands_txt our_brands_txt_en">Our Brands</h3>
 
     <div class="brand_div">
       <h4 class="brand_name brand_name_2">Moulin Roty</h4>
       <a href="https://moulinroty.com">
         <div class="brand_inner_div brand_inner_div_2">
-          <img class="absolute" id="brand_logo_6" src="images/logos/Moulin_Roty.png" loading="lazy" alt="Moulin Roty Logo">
-          <img class="flag flag_w36" src="images/flags/Flag_of_France.svg" loading="lazy" alt="France Flag">
+          <img class="absolute" id="brand_logo_6" src="images/logos/Moulin_Roty.png" alt="Moulin Roty Logo">
+          <img class="flag flag_w36" src="images/flags/Flag_of_France.svg" alt="France Flag">
         </div>
       </a>
     </div>
@@ -283,8 +295,8 @@
       <h4 class="brand_name brand_name_2">Trois Kilos Sept</h4>
       <a href="https://troiskilossept.com">
         <div class="brand_inner_div brand_inner_div_2">
-          <img class="absolute" id="brand_logo_7" src="images/logos/Trois_Kilos_Sept.svg" loading="lazy" alt="Trois Kilos Sept Logo">
-          <img class="flag flag_w36" src="images/flags/Flag_of_France.svg" loading="lazy" alt="France Flag">
+          <img class="absolute" id="brand_logo_7" src="images/logos/Trois_Kilos_Sept.svg" alt="Trois Kilos Sept Logo">
+          <img class="flag flag_w36" src="images/flags/Flag_of_France.svg" alt="France Flag">
         </div>
       </a>
     </div>
@@ -293,8 +305,8 @@
       <h4 class="brand_name brand_name_2">Quax</h4>
       <a href="https://quax.eu"></a>
         <div class="brand_inner_div brand_inner_div_2">
-          <img class="absolute" id="brand_logo_8" src="images/logos/Quax.svg" loading="lazy" alt="Quax Logo">
-          <img class="flag flag_w33" src="images/flags/Flag_of_Belgium.svg" loading="lazy" alt="Belgium Flag">
+          <img class="absolute" id="brand_logo_8" src="images/logos/Quax.svg" alt="Quax Logo">
+          <img id="quax_belgium_flag" class="flag flag_w33" src="images/flags/Flag_of_Belgium.svg" alt="Belgium Flag">
         </div>
       </a>
     </div>
@@ -303,8 +315,8 @@
       <h4 class="brand_name brand_name_2">East Coast</h4>
       <a href="https://www.eastcoastnursery.co.uk/">
         <div class="brand_inner_div brand_inner_div_2">
-          <img class="absolute" id="brand_logo_9" src="images/logos/East_Coast.svg" loading="lazy" alt="East Coast Logo">
-          <img class="flag flag_w41" src="images/flags/UK.svg" loading="lazy" alt="UK Flag">
+          <img class="absolute" id="brand_logo_9" src="images/logos/East_Coast.svg" alt="East Coast Logo">
+          <img class="flag flag_w41" src="images/flags/UK.svg" alt="UK Flag">
         </div>
       </a>
     </div>
@@ -313,59 +325,69 @@
 
   <div class="change_photo_divs_div">
     <div class="side_photos_div side_photos_div_left side_photos_div_2">
-      <div id="change_dreams_btn_1" class="change_photos_btn change_dreams_btn">
-        CHANGE DREAMS
+      <div id="change_dreams_btn_1" class="change_photos_btn change_dreams_btn change_photos_btn_en">
+        <span>CHANGE DREAMS</span>
         <div class="change_photos_hand">
-          <img id="change_dreams_hand_1" src="images/Hand_White_Right.svg" loading="lazy" alt="Pointer Hand White Right">
+          <img id="change_dreams_hand_1" src="images/Hand_White_Right.svg" alt="Pointer Hand White Right">
         </div>
       </div>
       
-      <img class="side_photo_dream" src="images/dreams/dream_1_1.png" loading="lazy" alt="Dream">
-      <img class="side_photo_dream" src="images/dreams/dream_1_2.png" loading="lazy" alt="Dream">
-      <img class="side_photo_dream" src="images/dreams/dream_1_3.png" loading="lazy" alt="Dream">
+      <img class="side_photo_dream" alt="Dream">
+      <img class="side_photo_dream" alt="Dream">
+      <img class="side_photo_dream" alt="Dream">
     </div>
   
     <div class="side_photos_div side_photos_div_right side_photos_div_2">
-      <div id="change_dreams_btn_2" class="change_photos_btn change_dreams_btn">
-        CHANGE DREAMS
+      <div id="change_dreams_btn_2" class="change_photos_btn change_dreams_btn change_photos_btn_en">
+        <span>CHANGE DREAMS</span>
         <div class="change_photos_hand">
-          <img id="change_dreams_hand_2" src="images/Hand_White_Right.svg" loading="lazy" alt="Pointer Hand White Right">
+          <img id="change_dreams_hand_2" src="images/Hand_White_Right.svg" alt="Pointer Hand White Right">
         </div>
       </div>
       
-      <img class="side_photo_dream" src="images/dreams/dream_1_4.png" loading="lazy" alt="Dream">
-      <img class="side_photo_dream" src="images/dreams/dream_1_5.png" loading="lazy" alt="Dream">
-      <img class="side_photo_dream" src="images/dreams/dream_1_6.png" loading="lazy" alt="Dream">
+      <img class="side_photo_dream" alt="Dream">
+      <img class="side_photo_dream" alt="Dream">
+      <img class="side_photo_dream" alt="Dream">
     </div>
   </div>
 
-  <img src="images/dream_circles.svg" class="dream_circles dream_circles_left dream_circles_top" loading="lazy" alt="dream_circles">
-  <img src="images/dream_circles.svg" class="dream_circles dream_circles_left dream_circles_middle" loading="lazy" alt="dream_circles">
-  <img src="images/dream_circles.svg" class="dream_circles dream_circles_left dream_circles_bottom" loading="lazy" alt="dream_circles">
-  <img src="images/dream_circles.svg" class="dream_circles dream_circles_right dream_circles_top" loading="lazy" alt="dream_circles">
-  <img src="images/dream_circles.svg" class="dream_circles dream_circles_right dream_circles_middle" loading="lazy" alt="dream_circles">
-  <img src="images/dream_circles.svg" class="dream_circles dream_circles_right dream_circles_bottom" loading="lazy" alt="dream_circles">
+  <div class="absolute" id="bridge_3_img_1_div_1">
+    <img class="product" id="bridge_3_img_1_1" data-src="images/products/Moulin_Roty_Goat.png" alt="">
+  </div>
+  <div class="absolute" id="bridge_3_img_1_div_2">
+    <img class="product" id="bridge_3_img_1_2" data-src="images/products/Moulin_Roty_Elephant_2.png" alt="">
+  </div>
+  <div class="absolute" id="bridge_3_img_1_div_3">
+    <img class="product" id="bridge_3_img_1_3" data-src="images/products/Trois_Kilos_Sept_Leonard.png" alt="">
+  </div>
+
+  <img src="images/dream_circles.svg" class="dream_circles dream_circles_left dream_circles_top" alt="dream_circles">
+  <img src="images/dream_circles.svg" class="dream_circles dream_circles_left dream_circles_middle" alt="dream_circles">
+  <img src="images/dream_circles.svg" class="dream_circles dream_circles_left dream_circles_bottom" alt="dream_circles">
+  <img src="images/dream_circles.svg" class="dream_circles dream_circles_right dream_circles_top" alt="dream_circles">
+  <img src="images/dream_circles.svg" class="dream_circles dream_circles_right dream_circles_middle" alt="dream_circles">
+  <img src="images/dream_circles.svg" class="dream_circles dream_circles_right dream_circles_bottom" alt="dream_circles">
 
 </div>
 
-<div id="bridge_3">
+<div id="bridge_3" class="bridge">
 
-  <img class="product animation" id="bridge_3_img_2_1" src="images/products/Trois_Kilos_Sept_Zebra.png" loading="lazy" alt="Trois_Kilos_Sept_Zebra">
-  <img class="product animation" id="bridge_3_img_2_2" src="images/products/Trois_Kilos_Sept_Koala.png" loading="lazy" alt="Trois_Kilos_Sept_Koala">
-  <img class="product animation" id="bridge_3_img_2_3" src="images/products/Moulin_Roty_Cat_3.png" loading="lazy" alt="Moulin_Roty_Cat">
-  <img class="product animation" id="bridge_3_img_2_4" src="images/products/Moulin_Roty_Toy_2.png" loading="lazy" alt="Moulin_Roty_Toy">
-  <img class="product animation" id="bridge_3_img_2_5" src="images/products/Moulin_Roty_Cat_4.png" loading="lazy" alt="Moulin_Roty_Cat">
-  <img class="product animation" id="bridge_3_img_2_6" src="images/products/Moulin_Roty_Scene_2.png" loading="lazy" alt="Moulin_Roty_Scene">
-  <img class="product animation" id="bridge_3_img_2_7" src="images/products/Bizzi_Growing_Toy.png" loading="lazy" alt="Bizzi_Growing_Toy">
-  <img class="product animation" id="bridge_3_img_2_8" src="images/products/Moulin_Roty_Fish.png" loading="lazy" alt="Moulin_Roty_Fish">
-  <img class="product animation" id="bridge_3_img_2_9" src="images/products/Moulin_Roty_Lion.png" loading="lazy" alt="Moulin_Roty_Lion">
-  <img class="product animation" id="bridge_3_img_2_10" src="images/products/Moulin_Roty_Koala.png" loading="lazy" alt="Moulin_Roty_Koala">
+  <img class="product animation" id="bridge_3_img_2_1" data-src="images/products/Trois_Kilos_Sept_Zebra.png" alt="Trois_Kilos_Sept_Zebra">
+  <img class="product animation" id="bridge_3_img_2_2" data-src="images/products/Trois_Kilos_Sept_Koala.png" alt="Trois_Kilos_Sept_Koala">
+  <img class="product animation" id="bridge_3_img_2_3" data-src="images/products/Moulin_Roty_Cat_3.png" alt="Moulin_Roty_Cat">
+  <img class="product animation" id="bridge_3_img_2_4" data-src="images/products/Moulin_Roty_Toy_2.png" alt="Moulin_Roty_Toy">
+  <img class="product animation" id="bridge_3_img_2_5" data-src="images/products/Moulin_Roty_Cat_4.png" alt="Moulin_Roty_Cat">
+  <img class="product animation" id="bridge_3_img_2_6" data-src="images/products/Moulin_Roty_Scene_2.png" alt="Moulin_Roty_Scene">
+  <img class="product animation" id="bridge_3_img_2_7" data-src="images/products/Bizzi_Growing_Toy.png" alt="Bizzi_Growing_Toy">
+  <img class="product animation" id="bridge_3_img_2_8" data-src="images/products/Moulin_Roty_Fish.png" alt="Moulin_Roty_Fish">
+  <img class="product animation" id="bridge_3_img_2_9" data-src="images/products/Moulin_Roty_Lion.png" alt="Moulin_Roty_Lion">
+  <img class="product animation" id="bridge_3_img_2_10" data-src="images/products/Moulin_Roty_Koala.png" alt="Moulin_Roty_Koala">
 
-  <img class="product" id="footsteps_4" src="images/footsteps_2.svg" loading="lazy" alt="Footsteps">
-  <img class="product animation" id="bridge_3_img_3_1" src="images/products/Stokke_Sleepi_1.png" loading="lazy" alt="Stokke_Sleepi">
-  <img class="product animation" id="bridge_3_img_3_2" src="images/products/Stokke_Sleepi_2.png" loading="lazy" alt="Stokke_Sleepi">
-  <img class="product animation" id="bridge_3_img_3_3" src="images/products/Stokke_Sleepi_3.png" loading="lazy" alt="Stokke_Sleepi">
-  <img class="product animation" id="bridge_3_img_3_4" src="images/products/Stokke_Sleepi_4.png" loading="lazy" alt="Stokke_Sleepi">
+  <img class="product" id="footsteps_4" data-src="images/footsteps_2.svg" alt="Footsteps">
+  <img class="product animation" id="bridge_3_img_3_1" data-src="images/products/Stokke_Sleepi_1.png" alt="Stokke_Sleepi">
+  <img class="product animation" id="bridge_3_img_3_2" data-src="images/products/Stokke_Sleepi_2.png" alt="Stokke_Sleepi">
+  <img class="product animation" id="bridge_3_img_3_3" data-src="images/products/Stokke_Sleepi_3.png" alt="Stokke_Sleepi">
+  <img class="product animation" id="bridge_3_img_3_4" data-src="images/products/Stokke_Sleepi_4.png" alt="Stokke_Sleepi">
 
 </div>
 
@@ -375,57 +397,65 @@
   
   <div class="showcase">
     <div class="showcase_side">
-       <div class="showcase_line" style="position: relative;">
+       <div class="showcase_line">
          <img src="images/Showcase_Wave_Left.svg" class="showcase_wave" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_160.png" loading="lazy" alt="">
+         <img class="showcase_item showcase_item_pad_left" name="Bugaboo" src="images/showcase/Bugaboo_Strollers_Twin_2_80.webp" alt="Bugaboo_Strollers_Twin_2">
+         <img class="showcase_item showcase_item_pad_left" name="BeSafe" src="images/showcase/BeSafe_iZi_Turn_80.webp" alt="BeSafe_iZi_Turn">
+         <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Xplory_X_2_80.webp" alt="Stokke_Xplory_X_2">
+         <img class="showcase_item showcase_item_pad_left" name="Bugaboo" src="images/showcase/Bugaboo_Strollers_Twin_80.webp" alt="Bugaboo_Strollers_Twin">
+         <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Xplory_X_3_80.webp" alt="Stokke_Xplory_X_3">
        </div>
        <div class="showcase_line showcase_line_middle">
-         <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+         <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Limas_Carrier_Flex_80.webp" alt="Stokke_Limas_Carrier_Flex">
+         <img class="showcase_item showcase_item_pad_right" name="BeSafe" src="images/showcase/BeSafe_Haven_80.webp" alt="BeSafe_Haven">
+         <img class="showcase_item showcase_item_pad_right" name="BeSafe" src="images/showcase/BeSafe_Newborn_Haven_80.webp" alt="BeSafe_Newborn_Haven">
+         <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Limas_Carrier_80.webp" alt="Stokke_Limas_Carrier">
+         <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/JetKids_by_Stokke_BedBox_80.webp" alt="JetKids_by_Stokke_BedBox">
        </div>
        <div class="showcase_line">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-         <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+         <img class="showcase_item showcase_item_pad_left" name="Moulin Roty" src="images/showcase/Moulin_Roty_Clothes_2_80.webp" alt="Moulin_Roty_Clothes_2">
+         <img class="showcase_item showcase_item_pad_left" name="Moulin Roty" src="images/showcase/Moulin_Roty_Clothes_6_80.webp" alt="Moulin_Roty_Clothes_6">
+         <img class="showcase_item showcase_item_pad_left" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Clothes_80.webp" alt="Trois_Kilos_Sept_Clothes">
+         <img class="showcase_item showcase_item_pad_left" name="SnoozeBaby" src="images/showcase/SnoozeBaby_Clothes_2_80.webp" alt="SnoozeBaby_Clothes_2">
+         <img class="showcase_item showcase_item_pad_left" name="Moulin Roty" src="images/showcase/Moulin_Roty_Clothes_5_80.webp" alt="Moulin_Roty_Clothes_5">
        </div>
     </div>
    
     <div class="showcase_large_item_div">
-      <img src="images/Showcase_Wave_Middle.svg" class="showcase_wave" alt="">
-       <img id="showcase_2_large_item" class="showcase_large_item" src="images/showcase_items/SnoozeBaby_Clothes_270.png" loading="lazy" alt="">
+      <div class="showcase_logo_div showcase_logo_div_left">
+        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
+      </div>
+
+       <img src="images/Showcase_Wave_Middle.svg" class="showcase_wave showcase_wave_middle" alt="">
+       <img id="showcase_2_large_item" class="showcase_large_item" src="images/showcase/Stokke_Xplory_X_2_270.jpg" alt="">
+
+       <div class="showcase_logo_div showcase_logo_div_right">
+        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
+      </div>
     </div>
    
     <div class="showcase_side">
      <div class="showcase_line">
-      <img src="images/Showcase_Wave_Right.svg" class="showcase_wave" alt="">
-      <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+       <img src="images/Showcase_Wave_Right.svg" class="showcase_wave" alt="">
+       <img class="showcase_item showcase_item_pad_right" name="BeSafe" src="images/showcase/BeSafe_iZi_Go_Modular_80.webp" alt="BeSafe_iZi_Go_Modular">
+       <img class="showcase_item showcase_item_pad_right" name="BeSafe" src="images/showcase/BeSafe_Stretch_80.webp" alt="BeSafe_Stretch">
+       <img class="showcase_item showcase_item_pad_right" name="BeSafe" src="images/showcase/BeSafe_iZi_Modular_80.webp" alt="BeSafe_iZi_Modular">
+       <img class="showcase_item showcase_item_pad_right" name="BeSafe" src="images/showcase/Besafe_Flex-Fix_80.webp" alt="Besafe_Flex-Fix">
+       <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Xplory_X_1_80.webp" alt="Stokke_Xplory_X_1">
      </div>
      <div class="showcase_line showcase_line_middle">
-       <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_left" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+       <img class="showcase_item showcase_item_pad_left" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Booties_1_80.webp" alt="Trois_Kilos_Sept_Booties_1">
+       <img class="showcase_item showcase_item_pad_left" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Socks_80.webp" alt="Trois_Kilos_Sept_Socks">
+       <img class="showcase_item showcase_item_pad_left" name="Moulin Roty" src="images/showcase/Moulin_Roty_Shoes_2_80.webp" alt="Moulin_Roty_Shoes_2">
+       <img class="showcase_item showcase_item_pad_left" name="Moulin Roty" src="images/showcase/Moulin_Roty_Shoes_1_80.webp" alt="Moulin_Roty_Shoes_1">
+       <img class="showcase_item showcase_item_pad_left" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Booties_2_80.webp" alt="Trois_Kilos_Sept_Booties_2">
      </div>
      <div class="showcase_line">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
-       <img class="showcase_item showcase_item_pad_right" src="images/showcase_items/SnoozeBaby_Clothes_80.png" loading="lazy" alt="">
+       <img class="showcase_item showcase_item_pad_right" name="Moulin Roty" src="images/showcase/Moulin_Roty_Clothes_3_80.webp" alt="Moulin_Roty_Clothes_3">
+       <img class="showcase_item showcase_item_pad_right" name="Trois Kilos Sept" src="images/showcase/Trois_Kilos_Sept_Hats_80.webp" alt="Trois_Kilos_Sept_Hats">
+       <img class="showcase_item showcase_item_pad_right" name="Moulin Roty" src="images/showcase/Moulin_Roty_Clothes_4_80.webp" alt="Moulin_Roty_Clothes_4">
+       <img class="showcase_item showcase_item_pad_right" name="SnoozeBaby" src="images/showcase/SnoozeBaby_Clothes_4_80.webp" alt="SnoozeBaby_Clothes_4">
+       <img class="showcase_item showcase_item_pad_right" name="Moulin Roty" src="images/showcase/Moulin_Roty_Clothes_1_80.webp" alt="Moulin_Roty_Clothes_1">
      </div>
    </div>
 
@@ -449,33 +479,33 @@
 
 </div>
 1
-<div id="bridge_4">
+<div id="bridge_4" class="bridge">
 
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_1" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_2" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_3" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_4" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_5" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_6" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_7" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_8" alt="">
-  <img src="images/butterfly.svg" class="butterfly" id="butterfly_9" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_1" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_2" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_3" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_4" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_5" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_6" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_7" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_8" alt="">
+  <img data-src="images/butterfly.svg" class="product butterfly" id="butterfly_9" alt="">
 
-  <img src="images/cloud_1.svg" id="cloud_1" class="absolute" alt="">
-  <img src="images/cloud_2.svg" id="cloud_2" class="absolute" alt="">
-  <img src="images/cloud_1.svg" id="cloud_3" class="absolute" alt="">
+  <img data-src="images/cloud_1.svg" id="cloud_1" class="product" alt="">
+  <img data-src="images/cloud_2.svg" id="cloud_2" class="product" alt="">
+  <img data-src="images/cloud_1.svg" id="cloud_3" class="product" alt="">
 
-  <img class="product animation" id="bridge_4_img_1_1" src="images/products/Bizzi_Growing_Cloud_1.png" alt="">
-  <img class="product animation" id="bridge_4_img_1_2" src="images/products/Moulin_Roty_Mobile_Musical_1.png" alt="">
-  <img class="product animation" id="bridge_4_img_1_3" src="images/products/Bizzi_Growing_Cloud_2.png" alt="">
-  <img class="product animation" id="bridge_4_img_1_4" src="images/products/Moulin_Roty_Mobile_Musical_2.png" alt="">
+  <img class="product animation" id="bridge_4_img_1_1" data-src="images/products/Bizzi_Growing_Cloud_1.png" alt="">
+  <img class="product animation" id="bridge_4_img_1_2" data-src="images/products/Moulin_Roty_Mobile_Musical_1.png" alt="">
+  <img class="product animation" id="bridge_4_img_1_3" data-src="images/products/Bizzi_Growing_Cloud_2.png" alt="">
+  <img class="product animation" id="bridge_4_img_1_4" data-src="images/products/Moulin_Roty_Mobile_Musical_2.png" alt="">
 
-  <img class="product animation" id="bridge_4_img_2_1" src="images/products/Moulin_Roty_Goose_1.png" alt="">
-  <img class="product animation" id="bridge_4_img_2_2" src="images/products/Moulin_Roty_Bag.png" alt="">
-  <img class="product animation" id="bridge_4_img_2_3" src="images/products/Moulin_Roty_Toy_3.png" alt="">
-  <img class="product animation" id="bridge_4_img_2_4" src="images/products/Moulin_Roty_Goose_2.png" alt="">
-  <img class="product animation" id="bridge_4_img_2_5" src="images/products/Moulin_Roty_Cat_5.png" alt="">
-  <img class="product animation" id="bridge_4_img_2_6" src="images/products/Moulin_Roty_Cat_6.png" alt="">
+  <img class="product animation" id="bridge_4_img_2_1" data-src="images/products/Moulin_Roty_Goose_1.png" alt="">
+  <img class="product animation" id="bridge_4_img_2_2" data-src="images/products/Moulin_Roty_Bag.png" alt="">
+  <img class="product animation" id="bridge_4_img_2_3" data-src="images/products/Moulin_Roty_Toy_3.png" alt="">
+  <img class="product animation" id="bridge_4_img_2_4" data-src="images/products/Moulin_Roty_Goose_2.png" alt="">
+  <img class="product animation" id="bridge_4_img_2_5" data-src="images/products/Moulin_Roty_Cat_5.png" alt="">
+  <img class="product animation" id="bridge_4_img_2_6" data-src="images/products/Moulin_Roty_Cat_6.png" alt="">
 
   <div class="floor" id="floor_4"></div>
 
@@ -485,7 +515,7 @@
 
   <div id="brands_div_3" class="brands_div">
     
-    <h3 class="our_brands_txt">Our Brands</h3>
+    <h3 class="our_brands_txt our_brands_txt_en">Our Brands</h3>
     
     <div class="brand_div">
       <h4 class="brand_name brand_name_1">Bizzi Growin</h4>
@@ -542,52 +572,55 @@
   <div class="change_photo_divs_div">
     <div class="side_photos_div side_photos_div_left side_photos_div_2">
 
-      <div id="change_rooms_btn_1" class="change_photos_btn change_rooms_btn">
-        CHANGE ROOMS
+      <div id="change_rooms_btn_1" class="change_photos_btn change_rooms_btn change_photos_btn_en">
+        <span>CHANGE ROOMS</span>
         <div class="change_photos_hand">
           <img id="change_rooms_hand_1" src="images/Hand_White_Right.svg" alt="">
         </div>
       </div>
   
       <div class="side_photo_rooms_div">
-        <img class="side_photo_rooms" src="images/rooms/room_1_1.png" loading="lazy" alt="Room Photo">
+        <img class="side_photo_rooms" alt="Room Photo">
       </div>
       <div class="side_photo_rooms_div">
-        <img class="side_photo_rooms" src="images/rooms/room_1_2.png" alt="Room Photo">
+        <img class="side_photo_rooms" alt="Room Photo">
       </div>
       <div class="side_photo_rooms_div">
-        <img class="side_photo_rooms" src="images/rooms/room_1_3.png" alt="Room Photo">
+        <img class="side_photo_rooms" alt="Room Photo">
       </div>
     </div>
   
-    <div class="side_photos_div side_photos_div_right side_photos_div_2">
+    <div class="side_photos_div side_photos_div_right side_photos_div_2 change_rooms_div">
   
-      <div id="change_rooms_btn_2" class="change_photos_btn change_rooms_btn">
-        CHANGE ROOMS
+      <div id="change_rooms_btn_2" class="change_photos_btn change_rooms_btn change_photos_btn_en">
+        <span>CHANGE ROOMS</span>
         <div class="change_photos_hand">
           <img id="change_rooms_hand_2" src="images/Hand_White_Right.svg" alt="">
         </div>
       </div>
   
       <div class="side_photo_rooms_div">
-        <img class="side_photo_rooms" src="images/rooms/room_1_4.png" alt="Room Photo">
+        <img class="side_photo_rooms" alt="Room Photo">
       </div>
       <div class="side_photo_rooms_div">
-        <img class="side_photo_rooms" src="images/rooms/room_1_5.png" alt="Room Photo">
+        <img class="side_photo_rooms" alt="Room Photo">
       </div>
       <div class="side_photo_rooms_div">
-        <img class="side_photo_rooms" src="images/rooms/room_1_6.png" alt="Room Photo">
+        <img class="side_photo_rooms" alt="Room Photo">
       </div>
     </div>
   </div>
 
+  <p class="olala_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+
+
   <div id="contact_div">
 
     <div class="contact_div_piece" id="google_map" style="position: relative; height: 320px; vertical-align: top;">
-      <iframe style="margin-top:15px; border-width: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.1706547439857!2d44.77638005109239!3d41.70786378390042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d836ea3bf29%3A0xd76cfc1d57c5fea7!2zTydsYWxhIOKAoiDhg50n4YOa4YOQ4YOa4YOQ!5e0!3m2!1sen!2sge!4v1674832288906!5m2!1sen!2sge" width="318" height="306" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe style="margin-top:15px; border-width: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.1706547439857!2d44.77638005109239!3d41.70786378390042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d836ea3bf29%3A0xd76cfc1d57c5fea7!2zTydsYWxhIOKAoiDhg50n4YOa4YOQ4YOa4YOQ!5e0!3m2!1sen!2sge!4v1674832288906!5m2!1sen!2sge" width="318" height="306" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div id="darken_map"></div>
       <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
-      <video autoplay muted playsinline id="google_map_cover" poster="images/night_back.png">
+      <video autoplay muted id="google_map_cover" poster="images/night_back.png">
         <source data-src="Google Map Cover.mp4" type="video/mp4">
       </video>
     </div>
@@ -612,8 +645,8 @@
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="nbKkP4OI"></script>
   <div id="change_season_div">
-    <div id="change_season_btn" class="change_photos_btn">
-      CHANGE SEASONS
+    <div id="change_season_btn" class="change_photos_btn change_seasons_btn change_photos_btn_en">
+      <span>CHANGE SEASONS</span>
       <div class="change_photos_hand">
         <img id="change_season_hand" src="images/Hand_White_Right.svg" alt="">
       </div>
@@ -625,13 +658,6 @@
 <div id="street">
 </div>
 
-<script>
-  lightbox.option({
-    "imageFadeDuration": 0,
-    "resizeDuration": 0,
-    "disableScrolling": true
-  })
-</script>
   
 <div id="bottom_div">
 
@@ -686,11 +712,12 @@
   
 </div>
 
-<script src="js/handleMidRange.js"></script>
 <script src="js/changePhotos.js"></script>
 <script src="js/changeSeasons.js"></script>
+<script src="js/onload.js"></script>
 <script src="js/showcase.js"></script>
 <script src="js/observer.js"></script>
+<script src="js/changeLanguage.js"></script>
 
 </body>
 </html>

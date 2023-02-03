@@ -19,8 +19,6 @@ let seasonIndex = -1;
   seasons.push(season2);
   seasons.push(season3);
   seasons.push(season4);
-  
-  changeSeason();
 
   change_season_btn.addEventListener("mouseover", () => {
     change_season_hand.style.visibility = "hidden";
@@ -47,7 +45,7 @@ let seasonIndex = -1;
     seasons[seasonIndex].forEach((name, i) =>
     {
       let image = new Image();
-      image.src = "images/seasons/" + name + ".png";
+      image.src = "images/seasons/" + name + ".webp";
       image.id = "street_img_" + (seasonIndex + 1) + '_' + (i + 1);
       image.classList.add("absolute");
       image.alt = name;
@@ -58,6 +56,6 @@ let seasonIndex = -1;
     seasons[seasonIndex].forEach((name, i) =>
     {
       let image = new Image();
-      image.src = "images/seasons/" + name + ".png";
+      image.src = "images/seasons/" + name + ".webp";
     })
   }

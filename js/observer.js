@@ -24,6 +24,9 @@ let observer6 = new IntersectionObserver((entries) =>
 let observer7 = new IntersectionObserver((entries) => 
   handleObserve(observer7, entries, 4, 2, 6), { threshold: [0] });
 
+let observer8 = new IntersectionObserver((entries) => 
+  handleObserve(observer8, entries, 2, 3, 4), { threshold: [0] });
+
 function handleObserve(observer, entries, bridgeNum, imgNum, imgCount)
 {
   if (entries[0].isIntersecting)
@@ -53,7 +56,7 @@ observer4.observe(document.querySelector("#bridge_3"));
 observer5.observe(document.querySelector("#floor_3"));
 observer6.observe(document.querySelector("#bridge_4"));
 observer7.observe(document.querySelector("#floor_4"));
-// observer8.observe(document.querySelector("#google_map_cover"));
+observer8.observe(document.querySelector("#bridge_2_img_3_div_1"));
 
 document.addEventListener("DOMContentLoaded", function()
 {
@@ -63,20 +66,24 @@ document.addEventListener("DOMContentLoaded", function()
     {
       if (entries[0].isIntersecting)
       {
-        for (var source in video_background.children)
+        if (window.innerWidth > 1350)
         {
-          var videoSource = video_background.children[source];
+          for (var source in video_background.children)
+          {
+            var videoSource = video_background.children[source];
+  
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE")
+              videoSource.src = videoSource.dataset.src;
+          }
 
-          if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE")
-            videoSource.src = videoSource.dataset.src;
+          video_background.load();
         }
 
-        video_background.load();
-        lazyVideoObserver.unobserve(entries[0].target);
+        lazyVideoObserver1.unobserve(entries[0].target);
       }
     });
 
-    lazyVideoObserver1.observe(document.getElementById("brand_div_2_3"));
+    lazyVideoObserver1.observe(document.getElementById("quax_belgium_flag"));
 
     var lazyVideoObserver2 = new IntersectionObserver(function(entries, observer)
     {
@@ -95,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function()
           google_map_cover.style.display = "none";
           darken_map.style.display = "none";
         }, 4000);
-        lazyVideoObserver.unobserve(entries[0].target);
+        lazyVideoObserver2.unobserve(entries[0].target);
       }
     });
 

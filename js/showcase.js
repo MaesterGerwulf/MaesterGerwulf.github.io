@@ -11,14 +11,14 @@ showcase_1.addEventListener("click", (evt) => changeLargeItem(evt, "showcase_1")
     if (evt.target.classList[0] == "showcase_item")
     {
       let preloadImage = new Image();
-      preloadImage.src = "images/showcase_items/" + evt.target.alt + "_270.png";
+      preloadImage.src = "images/showcase/" + evt.target.alt + "_270.jpg";
 
       let largeItem = document.getElementById(showcaseName + "_large_item");
       largeItem.style.transform = "scale(0)";
       setTimeout(() => 
       {
         document.getElementById(showcaseName + "_item_name").innerHTML = evt.target.name;
-        largeItem.src  = "images/showcase_items/" + evt.target.alt + "_270.png";
+        largeItem.src  = "images/showcase/" + evt.target.alt + "_270.jpg";
         largeItem.style.transform = "scale(1)";
       }, 1100);
     }

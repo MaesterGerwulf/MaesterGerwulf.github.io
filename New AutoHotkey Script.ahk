@@ -1,5 +1,5 @@
 ﻿
-if (1 == 1)
+if (1 == 2)
 {
 	Loop
 	{
@@ -25,7 +25,7 @@ else if (1 == 2)
 		MsgBox, next
 	}
 }
-else
+else if (1 == 2)
 {
 	Loop
 	{
@@ -37,4 +37,14 @@ else
 		MsgBox, next
 	}
 }
-
+else
+{
+	Loop
+	{
+		InputBox, width, width
+		a := width / 1350 * 100
+		
+		Clipboard := "width: " . a . "%;"
+		MsgBox, next
+	}
+}

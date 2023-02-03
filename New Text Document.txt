@@ -1,0 +1,5 @@
+photos 1-6 webp80
+	   7-24 webp100
+	   
+showcase small webp90
+showcase large jpeg 8/12
