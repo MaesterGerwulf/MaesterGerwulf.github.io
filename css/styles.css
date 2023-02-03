@@ -79,6 +79,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   animation: move-bg 8s infinite linear;
+  
 }
 
 @keyframes move-bg {
@@ -217,6 +218,10 @@ body {
   vertical-align: top;
 }
 
+#brands_div_2 {
+  padding-bottom: 35px;
+}
+
 @media all and (min-width: 1350px)
 {
   .and_life_begins_txt {
@@ -224,6 +229,7 @@ body {
     left: calc(59.1vw + 42px);
     top: calc(93.3px - 1.58vw);
     font-size: 4.15vw;
+    margin: 0;
   }
 
   
@@ -259,7 +265,7 @@ body {
     margin: 0 240px;
   }
   #brands_div_2 {
-    margin: 0 390px;
+    margin: 72px 390px 0;
   }
   .side_photos_div {
     position: absolute;
@@ -295,7 +301,6 @@ body {
   .olala_txt {
     font-size: 23px;
     line-height: 26px;
-    margin: 30px auto 20px auto;
   }
   .olala_txt_1 {
     width: 825px;
@@ -304,6 +309,16 @@ body {
   .olala_txt_2 {
     width: 750px;
     margin: 0 auto 20px;
+  }
+  .olala_txt_3 {
+    width: 825px;
+    margin: 0 auto 0px;
+    font-variation-settings: "wght" 400;
+  }
+  .olala_txt_4 {
+    width: 750px;
+    margin: 30px auto 36px;
+    font-variation-settings: "wght" 400;
   }
 
   .side_photo_div {
@@ -447,6 +462,12 @@ body {
 
 @media all and (max-width: 1349.97px)
 {
+  #section_2 {
+    padding-bottom: 38px;
+  }
+  #brands_div_2 {
+    margin-top: 38px;
+  }
   .and_life_begins_txt {
     font-size: 80px;
     display: block;
@@ -509,6 +530,16 @@ body {
   .olala_txt_2 {
     /* margin: 0 auto 20px; */
   }
+
+  .olala_txt_3 {
+    margin: 0 auto 0px;
+    font-variation-settings: "wght" 400;
+  }
+  .olala_txt_4 {
+    margin: 30px auto 36px;
+    font-variation-settings: "wght" 400;
+  }
+
   #brand_logo_1 {
     width: 54px;
     height: 54px;
@@ -786,8 +817,10 @@ body {
 .showcase_div {
   outline: 1px solid var(--brown1);
   position: relative;
-  margin: 2px 0;
   background-color: white;
+}
+.showcase_div {
+  margin: 1px 0;
 }
 .showcase {
   outline: 1px solid var(--brown1);
@@ -963,6 +996,10 @@ body {
   }
   .showcase_item_pad_left {
     margin-left: calc(15vw - 46.6px);
+  }
+  .showcase_item_name {
+    font-size: 24px;
+    line-height: 29px;
   }
   
   .showcase_item_pad_right {
@@ -1142,10 +1179,7 @@ body {
   z-index: 2;
 }
 
-#brands_div_2 {
-  margin-top: 72px;  
-  padding-bottom: 35px;
-}
+
 .brand_name_2 {
   color: var(--lightbrown);
 }
@@ -1219,6 +1253,7 @@ body {
   #section_2 {
     height: auto;
     background-size: cover;
+    width: calc(100vw + 1px);
   }
 }
 
@@ -1349,6 +1384,7 @@ body {
     background-image: url("../images/blue_back_3.svg");
     height: 632px;
     position: relative;
+    padding-bottom: 1px;
   }
   
   .butterfly {
@@ -1495,10 +1531,10 @@ body {
   background-position-y: 40px;
   text-align: center;
   position: relative;
-  background-color: var(--offwhite1);
+  background-color: var(--lightbrown2);
 }
 #brands_div_3 {
-  margin-top: 38px;
+  margin-top: 32px;
   padding-bottom: 35px;
 }
 
@@ -1548,25 +1584,27 @@ body {
 }
 #contact_txt {
   font-family: Vitigon;
-  font-size: 64px;
+  font-size: 56px;
+  line-height: 56px;
   color: var(--brown1);
   margin: 0;
-  padding-top: 11px;
+  padding-top: 22px;
 }
 #contact_info {
   font-family: LeagueSpartan;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 26px;
   font-variation-settings: "wght" 300;
-  color: var(--black);
+  color: var(--brown1);
   margin: 0;
+  margin-bottom: 8px;
 }
 #instagram_icon {
   fill: var(--cyan);
   width: 24px;
   position: absolute;
-  top: 160px;
-  left: 250px;
+  top: 99px;
+  left: 268px;
 }
 
 
@@ -1584,11 +1622,18 @@ body {
   padding: 30px 0;
 }
 
+@media all and (min-width: 1350px)
+{
+  #our_brands_txt_3 {
+    margin-bottom: 6px;
+  }
+}
+
 @media all and (min-width: 1200px)
 {
   #contact_div {
     width: 1176px;
-    margin: 250px auto 0 auto;
+    margin: 0 auto;
     outline: solid 1px var(--brown1);
   }
   #contact_inner_div {
@@ -1669,7 +1714,7 @@ body {
   margin: 9px 0 5px 0;
 }
 
-#copyright_txt:hover {
+.copyright_txt:hover {
   color: var(--cyan);
 }
 
@@ -1726,17 +1771,17 @@ body {
   }
   .click_photo_bottom_txt {
     color: var(--offwhite1);
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-    margin: 0.730vw 0 0 0.52vw;
+    font-size: 3.75vw;
+    line-height: 3.75vw;
+    margin: 1.25vw 0 0 0.78vw;
   }
   .click_photo_hand_bottom {
-    width: 3.44vw;
-    height: 3.44vw;
+    width: 5.16vw;
+    height: 5.16vw;
   }
 
   .copyright_txt {
-    font-size: 1.7vw;
+    font-size: 2.5vw;
   }
 }
 @media all and (min-width: 1920.03px)
