@@ -52,6 +52,11 @@ body {
   width: 328px;
 }
 
+.cls-6{
+  font-size:32px;
+  font-family: Vitigon;
+}
+
 .brands_div {
   display: inline-block;
   text-align: center;
@@ -59,6 +64,7 @@ body {
 #brands_div_1 {
   padding-bottom: 35px;
 }
+
 
 .and_life_begins_txt {
   /* font-size: clamp(3rem, 25vmin, 8rem); */
@@ -520,24 +526,14 @@ body {
     margin-top: 4px;
   }
   .olala_txt {
-    font-size: 13.5px;
-    line-height: 16px;
-    margin: 0 12px;
-  }
-  .olala_txt_1 {
-    
-  }
-  .olala_txt_2 {
-    /* margin: 0 auto 20px; */
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 33px;
   }
 
-  .olala_txt_3 {
-    margin: 0 auto 0px;
-    font-variation-settings: "wght" 400;
-  }
   .olala_txt_4 {
-    margin: 30px auto 36px;
-    font-variation-settings: "wght" 400;
+    margin-top: 20px;
+    margin-bottom: 24px;
   }
 
   #brand_logo_1 {
@@ -1525,10 +1521,6 @@ body {
 /* Section 3 */
 
 #section_3 {
-  background-image: url("../images/butterflies_back.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 40px;
   text-align: center;
   position: relative;
   background-color: var(--lightbrown2);
@@ -1648,7 +1640,7 @@ body {
   .contact_div_piece {
     display: block;
     width: 318px;
-    margin: 24px auto;
+    margin: 0 auto;
   }
 }
 
@@ -1656,6 +1648,28 @@ body {
 {
   #change_season_btn {
     display: none;;
+  }
+
+  #brands_div_3 {
+    padding-bottom: 20px;
+  }
+
+  #change_season_div {
+    display: none;
+  }
+
+  #contact_div {
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (min-width: 768px)
+{
+  #section_3 {
+    background-image: url("../images/butterflies_back.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
   }
 }
 
@@ -1752,7 +1766,7 @@ body {
     width: 100%;
   }
   #photo_viewer_1 {
-    border-radius: 10px 10px 0 0;
+    border-radius: 0;
   }
   #photo_viewer_2 {
     border-radius: 0;
