@@ -8,6 +8,12 @@ change_photos_btn_1.addEventListener("mouseover", (evt) => {
 change_photos_btn_1.addEventListener("mouseout", (evt) => {
   change_photos_hand_1.style.visibility = "visible";
 })
+change_photos_btn_1.addEventListener("touchstart", (evt) => {
+  change_photos_hand_1.style.visibility = "hidden";
+})
+change_photos_btn_1.addEventListener("touchend", (evt) => {
+change_photos_hand_1.style.visibility = "visible";
+})
 change_photos_btn_1.addEventListener("mousedown", (evt) => {
   change_photos_btn_1.style.color = cyan;
 })
