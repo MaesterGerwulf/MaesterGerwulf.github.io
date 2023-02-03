@@ -31,7 +31,7 @@ body {
 #home_btn_small {
   position: fixed;
   top: 0;
-  left: 15.5%;
+  left: 302px;
   z-index: 10;
   width: 114px;
 }
@@ -45,7 +45,7 @@ body {
 #section_1 {
   background-image: url("../images/footsteps_1.png");
   background-repeat: no-repeat;
-  background-position-x: 21.5vw;
+  background-position-x: calc(54.65vw - 636.5px);
 }
 
 #home_large {
@@ -90,11 +90,9 @@ body {
 #and_life_begins_txt_en {
   font-family: Vitigon;
   font-variation-settings: "wght" 400;
-  position: absolute;
-  left: 62.5%;
-  top: 58px;
-  margin: 0;
 }
+
+
 #and_life_begins_txt_ge {
   
 }
@@ -102,12 +100,10 @@ body {
 .olala_txt {
   font-family: LeagueSpartan;
   font-variation-settings: "wght" 300;
-  font-size: 24px;
-  line-height: 28px;
   text-align: center;
-  margin: 30px auto 0 auto;
-  color: var(--black);
+  color: var(--brown1);
 }
+
 #olala_txt_en {
   
 }
@@ -120,13 +116,14 @@ body {
   margin: 1px auto 3px auto;
   color: var(--cyan);
   position: relative;
+  font-size: 80px;
+  line-height: 90px;
 }
 
 .our_brands_txt_en {
   font-family: Vitigon;
   font-variation-settings: "wght" 300;
-  font-size: 80px;
-  line-height: 90px;
+  
 }
 
 .brand_div {
@@ -213,11 +210,31 @@ body {
   position: absolute;
 }
 
+.side_photos_div {
+  position: relative;
+}
+.side_photo_div {
+  vertical-align: top;
+}
+
 @media all and (min-width: 1350px)
 {
   .and_life_begins_txt {
-    font-size: 80px;
+    position: absolute;
+    left: calc(59.1vw + 42px);
+    top: calc(93.3px - 1.58vw);
+    font-size: 4.15vw;
   }
+
+  
+  
+  #our_brands_1_txt {
+    display: inline-block;
+    position: absolute;
+    top: 338px;
+    left: calc(50vw - 122.6px)
+  }
+
   .brand_div {
     padding: 12px calc(9vw - 110px);
   }
@@ -237,9 +254,6 @@ body {
   
   #section_1 {
     display: flex;
-  }
-  .olala_txt {
-    width: 750px;
   }
   .brands_div {
     margin: 0 240px;
@@ -268,9 +282,6 @@ body {
 }
 @media all and (min-width: 768px) and (max-width: 1349.97px)
 {
-  .and_life_begins_txt {
-    font-size: 52px;
-  }
   .brand_div {
     padding: 12px 12px;
   }
@@ -281,6 +292,20 @@ body {
 
 @media all and (min-width: 768px)
 {
+  .olala_txt {
+    font-size: 23px;
+    line-height: 26px;
+    margin: 30px auto 20px auto;
+  }
+  .olala_txt_1 {
+    width: 825px;
+    margin: 30px auto 1px;
+  }
+  .olala_txt_2 {
+    width: 750px;
+    margin: 0 auto 20px;
+  }
+
   .side_photo_div {
     margin: 24px 0;
   }
@@ -422,6 +447,11 @@ body {
 
 @media all and (max-width: 1349.97px)
 {
+  .and_life_begins_txt {
+    font-size: 80px;
+    display: block;
+  }
+
   .brand_div {
     vertical-align: top;
     padding: 12px calc(13vw - 90px);
@@ -450,6 +480,35 @@ body {
 
 @media all and (max-width: 767.97px)
 {
+  #home_btn_small {
+    left: 10px;
+    width: 65px;
+  }
+
+  #home_large {
+    width: 196px;
+  }
+  .and_life_begins_txt {
+    font-size: 48px;
+    margin: 4px 0 12px;
+  }
+
+  .our_brands_txt {
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 4px;
+  }
+  .olala_txt {
+    font-size: 13.5px;
+    line-height: 16px;
+    margin: 0 12px;
+  }
+  .olala_txt_1 {
+    
+  }
+  .olala_txt_2 {
+    /* margin: 0 auto 20px; */
+  }
   #brand_logo_1 {
     width: 54px;
     height: 54px;
@@ -569,11 +628,6 @@ body {
     margin-left: 50px;
     margin-right: 50px;
   }
-
-  #home_large {
-    width: 300px;
-  }
-
   .brand_div {
     width: 150px;
     height: 144px;
@@ -612,27 +666,20 @@ body {
     margin-bottom: 28px;
   } */
   .change_photos_btn {
-    visibility: hidden;
+    display: none;
+    position: absolute;
+    left: calc(14.7vw + 17px);
+    top: -32px;
     
   }
   #change_photos_btn_1 {
-    visibility: visible;
-    position: absolute;
-    left: calc(14.7vw + 17px);
-    top: -45px;
+    display: inline-block;
   }
   #change_dreams_btn_1 {
-    visibility: visible;
-    position: absolute;
-    left: calc(14.7vw + 17px);
-    top: -45px;
-    
+    display: inline-block;
   }
   #change_rooms_btn_1 {
-    visibility: visible;
-    position: absolute;
-    left: calc(14.7vw + 17px);
-    top: -45px;
+    display: inline-block;
   }
 }
 
@@ -737,7 +784,7 @@ body {
 /* Showcase 1 */
 
 .showcase_div {
-  outline: 2px solid var(--brown1);
+  outline: 1px solid var(--brown1);
   position: relative;
   margin: 2px 0;
   background-color: white;
@@ -1097,6 +1144,7 @@ body {
 
 #brands_div_2 {
   margin-top: 72px;  
+  padding-bottom: 35px;
 }
 .brand_name_2 {
   color: var(--lightbrown);
