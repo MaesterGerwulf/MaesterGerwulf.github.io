@@ -24,6 +24,75 @@ if (!hasTouch())
     change_photos_btn_1.style.color = offwhite;
     changePhotos();
   })
+
+  change_photos_btn_2.addEventListener("mouseover", () => {
+    change_photos_hand_2.style.visibility = "hidden";
+  })
+  change_photos_btn_2.addEventListener("mouseout", () => {
+    change_photos_hand_2.style.visibility = "visible";
+  })
+  change_photos_btn_2.addEventListener("mousedown", (evt) => {
+    change_photos_btn_2.style.color = cyan;
+  })
+  change_photos_btn_2.addEventListener("mouseup", () => {
+    change_photos_btn_2.style.color = offwhite;
+    changePhotos();
+  })
+  change_dreams_btn_1.addEventListener("mouseover", () => {
+    change_dreams_hand_1.style.visibility = "hidden";
+  })
+  change_dreams_btn_1.addEventListener("mouseout", () => {
+    change_dreams_hand_1.style.visibility = "visible";
+  })
+  change_dreams_btn_1.addEventListener("mousedown", () => {
+    change_dreams_btn_1.style.color = brown;
+  })
+  change_dreams_btn_1.addEventListener("mouseup", () => {
+    change_dreams_btn_1.style.color = offwhite;
+    changeDreams();
+  })
+  
+  change_dreams_btn_2.addEventListener("mouseover", () => {
+    change_dreams_hand_2.style.visibility = "hidden";
+  })
+  change_dreams_btn_2.addEventListener("mouseout", () => {
+    change_dreams_hand_2.style.visibility = "visible";
+  })
+  change_dreams_btn_2.addEventListener("mousedown", () => {
+    change_dreams_btn_2.style.color = brown;
+  })
+  change_dreams_btn_2.addEventListener("mouseup", () => {
+    change_dreams_btn_2.style.color = offwhite;
+    changeDreams();
+  })
+
+  change_rooms_btn_1.addEventListener("mouseover", (evt) => {
+    change_rooms_hand_1.style.visibility = "hidden";
+  })
+  change_rooms_btn_1.addEventListener("mouseout", (evt) => {
+    change_rooms_hand_1.style.visibility = "visible";
+  })
+  change_rooms_btn_1.addEventListener("mousedown", (evt) => {
+    change_rooms_btn_1.style.color = cyan;
+  })
+  change_rooms_btn_1.addEventListener("mouseup", () => {
+    change_rooms_btn_1.style.color = offwhite;
+    changeRooms();
+  })
+
+  change_rooms_btn_2.addEventListener("mouseover", () => {
+    change_rooms_hand_2.style.visibility = "hidden";
+  })
+  change_rooms_btn_2.addEventListener("mouseout", () => {
+    change_rooms_hand_2.style.visibility = "visible";
+  })
+  change_rooms_btn_2.addEventListener("mousedown", (evt) => {
+    change_rooms_btn_2.style.color = cyan;
+  })
+  change_rooms_btn_2.addEventListener("mouseup", () => {
+    change_rooms_btn_2.style.color = offwhite;
+    changeRooms();
+  })
 }
 else
 {
@@ -36,80 +105,56 @@ else
     change_photos_btn_1.style.color = offwhite;
       changePhotos();
   }, {passive: true})
-}
 
+  change_photos_btn_2.addEventListener("touchstart", (evt) => {
+    change_photos_hand_2.style.visibility = "hidden";
+    change_photos_btn_2.style.color = cyan;
+  }, {passive: true})
+  change_photos_btn_2.addEventListener("touchend", (evt) => {
+    change_photos_hand_2.style.visibility = "visible";
+    change_photos_btn_2.style.color = offwhite;
+      changePhotos();
+  }, {passive: true})
 
+  change_dreams_btn_1.addEventListener("touchstart", (evt) => {
+    change_dreams_hand_1.style.visibility = "hidden";
+    change_dreams_btn_1.style.color = brown;
+  }, {passive: true})
+  change_photos_btn_1.addEventListener("touchend", (evt) => {
+    change_dreams_hand_1.style.visibility = "visible";
+    change_dreams_btn_1.style.color = offwhite;
+      changeDreams();
+  }, {passive: true})
+  
+  change_dreams_btn_2.addEventListener("touchstart", (evt) => {
+    change_dreams_hand_2.style.visibility = "hidden";
+    change_dreams_btn_2.style.color = brown;
+  }, {passive: true})
+  change_photos_btn_2.addEventListener("touchend", (evt) => {
+    change_dreams_hand_2.style.visibility = "visible";
+    change_dreams_btn_2.style.color = offwhite;
+      changeDreams();
+  }, {passive: true})
 
-
-change_photos_btn_2.addEventListener("mouseover", () => {
-  change_photos_hand_2.style.visibility = "hidden";
-})
-change_photos_btn_2.addEventListener("mouseout", () => {
-  change_photos_hand_2.style.visibility = "visible";
-})
-change_photos_btn_2.addEventListener("mousedown", (evt) => {
-  change_photos_btn_2.style.color = cyan;
-})
-change_photos_btn_2.addEventListener("mouseup", () => {
-  change_photos_btn_2.style.color = offwhite;
-  changePhotos();
-})
-
-change_dreams_btn_1.addEventListener("mouseover", () => {
-  change_dreams_hand_1.style.visibility = "hidden";
-})
-change_dreams_btn_1.addEventListener("mouseout", () => {
-  change_dreams_hand_1.style.visibility = "visible";
-})
-change_dreams_btn_1.addEventListener("mousedown", () => {
-  change_dreams_btn_1.style.color = brown;
-})
-change_dreams_btn_1.addEventListener("mouseup", () => {
-  change_dreams_btn_1.style.color = offwhite;
-  changeDreams();
-})
-
-change_dreams_btn_2.addEventListener("mouseover", () => {
-  change_dreams_hand_2.style.visibility = "hidden";
-})
-change_dreams_btn_2.addEventListener("mouseout", () => {
-  change_dreams_hand_2.style.visibility = "visible";
-})
-change_dreams_btn_2.addEventListener("mousedown", () => {
-  change_dreams_btn_2.style.color = brown;
-})
-change_dreams_btn_2.addEventListener("mouseup", () => {
-  change_dreams_btn_2.style.color = offwhite;
-  changeDreams();
-})
-
-change_rooms_btn_1.addEventListener("mouseover", (evt) => {
+  change_rooms_btn_1.addEventListener("touchstart", (evt) => {
     change_rooms_hand_1.style.visibility = "hidden";
-})
-change_rooms_btn_1.addEventListener("mouseout", (evt) => {
-  change_rooms_hand_1.style.visibility = "visible";
-})
-change_rooms_btn_1.addEventListener("mousedown", (evt) => {
-  change_rooms_btn_1.style.color = cyan;
-})
-change_rooms_btn_1.addEventListener("mouseup", () => {
-  change_rooms_btn_1.style.color = offwhite;
-  changeRooms();
-})
-
-change_rooms_btn_2.addEventListener("mouseover", () => {
-  change_rooms_hand_2.style.visibility = "hidden";
-})
-change_rooms_btn_2.addEventListener("mouseout", () => {
-  change_rooms_hand_2.style.visibility = "visible";
-})
-change_rooms_btn_2.addEventListener("mousedown", (evt) => {
-  change_rooms_btn_2.style.color = cyan;
-})
-change_rooms_btn_2.addEventListener("mouseup", () => {
-  change_rooms_btn_2.style.color = offwhite;
-  changeRooms();
-})
+    change_rooms_btn_1.style.color = cyan;
+  }, {passive: true})
+  change_photos_btn_1.addEventListener("touchend", (evt) => {
+    change_rooms_hand_1.style.visibility = "visible";
+    change_rooms_btn_1.style.color = offwhite;
+    changeRooms();
+  }, {passive: true})
+  change_rooms_btn_2.addEventListener("touchstart", (evt) => {
+    change_rooms_hand_2.style.visibility = "hidden";
+    change_rooms_btn_2.style.color = cyan;
+  }, {passive: true})
+  change_photos_btn_2.addEventListener("touchend", (evt) => {
+    change_rooms_hand_2.style.visibility = "visible";
+    change_rooms_btn_2.style.color = offwhite;
+    changeRooms();
+  }, {passive: true})
+}
 
 let photoIndex = 0;
 let dreamIndex = -1;
