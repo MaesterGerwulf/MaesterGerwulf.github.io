@@ -9,7 +9,7 @@ function hasTouch()
         || navigator.msMaxTouchPoints > 0;
 }
 
-if (hasTouch())
+if (!hasTouch())
 {
   change_photos_btn_1.addEventListener("mouseover", (evt) => {
     change_photos_hand_1.style.visibility = "hidden";
@@ -30,12 +30,12 @@ else
   change_photos_btn_1.addEventListener("touchstart", (evt) => {
     change_photos_hand_1.style.visibility = "hidden";
     change_photos_btn_1.style.color = cyan;
-  })
+  }, {passive: true})
   change_photos_btn_1.addEventListener("touchend", (evt) => {
     change_photos_hand_1.style.visibility = "visible";
     change_photos_btn_1.style.color = offwhite;
       changePhotos();
-  })
+  }, {passive: true})
 }
 
 
