@@ -30,7 +30,7 @@ function onloadd()
   var tag = document.createElement("script");
   tag.src = "js/lightbox-plus-jquery.min.js";
   tag.onload = function() {
-    lightbox.option({'imageFadeDuration': 0,'resizeDuration': 0,'disableScrolling': true});
+    lightbox.option({'imageFadeDuration': 0,'resizeDuration': 0,'disableScrolling': true, 'alwaysShowNavOnTouchDevices': true});
   }
   document.getElementsByTagName("head")[0].appendChild(tag);
 

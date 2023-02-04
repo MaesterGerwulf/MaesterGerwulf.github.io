@@ -11,13 +11,13 @@
 
 @font-face {
   font-family: LeagueSpartan;
-  src: url("../fonts/LeagueSpartan/LeagueSpartan-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("../fonts/LeagueSpartan-VariableFont_wght.woff2") format("woff2");
   font-weight: 100 1000;
 }
 
 @font-face {
   font-family: Vitigon;
-  src: url("../fonts/VI-Ti-Gon/TIGON_1T.TTF") format("truetype-variations");
+  src: url("../fonts/TIGON_1T.woff2") format("woff2");
   font-weight: 100 1000;
 }
 
@@ -26,6 +26,10 @@ body {
   margin: 0;
   font-size: 0;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 #home_btn_small {
@@ -72,12 +76,7 @@ body {
 
 
 .and_life_begins_txt {
-  /* font-size: clamp(3rem, 25vmin, 8rem); */
   --bg-size: 400%;
-  /* color: var(--brown1); */
-
-  /* --color-one: hsl(15 90% 55%);
-  --color-two: hsl(40 95% 55%); */
   --color-one: var(--brown1);
   --color-two:  var(--cyan);
   background: linear-gradient(
@@ -482,6 +481,7 @@ body {
   .and_life_begins_txt {
     font-size: 80px;
     display: block;
+    margin: 15px auto 40px;
   }
 
   .brand_div {
@@ -507,6 +507,26 @@ body {
   #brands_div_2 {
     margin-left: 100px;
     margin-right: 100px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 850px)
+{
+  .olala_txt_1 {
+    width: 730px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .olala_txt_2 {
+    width: 730px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .showcase_item_pad_right {
+    margin-left: 0.1vw;
+  }
+  .showcase_item_pad_right {
+    margin-right: 0.1vw;
   }
 }
 
@@ -819,7 +839,10 @@ body {
   }
   #street {
     display: none;
-  };
+  }
+  .product {
+    display: none;
+  }
 }
 
 /* Showcase 1 */
@@ -929,22 +952,25 @@ body {
     position: absolute;
     width: 95px;
     height: 65px;
+    width: 4.95vw;
+    height: 3.4vw;
     top: 128px;
     outline: 1px solid var(--brown1);
     background-color: white;
+    z-index: 2;
   }
   .showcase_logo_div_left {
-    left: -68px;
+    left: calc(28px - 5vw);
   }
   .showcase_logo_div_right {
-    right: -68px;
+    right: calc(28px - 5vw);
   }
   .showcase_logo {
     position: relative;
     z-index: 1;
-    margin-left: 7px;
-    margin-top: 17px;
-    width: 80px;
+    margin-left: 0.365vw;
+    margin-top: 0.885vw;
+    width: 4.17vw;
   }
 }
 @media all and (min-width: 768px)
@@ -1025,6 +1051,9 @@ body {
     margin: 27px 22px 0;
   }
   .click_photo_div {
+    display: none;
+  }
+  .showcase_below {
     display: none;
   }
 }
@@ -1181,7 +1210,7 @@ body {
 /* Section 2 */
 
 #section_2 {
-  background-image: url("../images/night_back.png");
+  background-image: url("../images/night_back.jpg");
   background-position: center;
   position: relative;
   height: 1080px;
@@ -1261,6 +1290,7 @@ body {
     display: none;
   }
   #section_2 {
+    background-image: url("../images/night_back960.jpg");
     height: auto;
     background-size: cover;
     width: calc(100vw + 1px);
@@ -1313,18 +1343,15 @@ body {
   }
 
   #bridge_3_img_2_1 {
-    left: -39px;
-    top: -160px;
+    top: -170px;
   }
   #bridge_3_img_2_2 {
-    left: -36px;
-    top: -36px;
     z-index: 0;
   }
 
   #bridge_3_img_2_3 {
   top: -162px;
-  left: calc(15.5vw - 91.5px);
+  left: calc(15.5vw - 62px);
   }
   #bridge_3_img_2_4 {
     top: -7px;
@@ -1354,7 +1381,7 @@ body {
     left: calc(83.8vw - 77.5px);
   }
   #bridge_3_img_2_10 {
-    right: -92px;
+    right: -94px;
     top: -171px;
   }
 
@@ -1622,6 +1649,17 @@ body {
   width: 318px;
   height: 320px;
 }
+#contact_photo_txt_div {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(102, 67, 50, 0.70);
+  width: 318px;
+  height: 60px;
+}
+.contact_photo_txt {
+  font-size: 16px;
+  margin: 0;
+}
 
 #change_season_div {
   text-align: center;
@@ -1648,13 +1686,42 @@ body {
   .contact_div_piece {
     display: inline-block;
   }
+
+  .contact_logo_div {
+    position: absolute;
+    width: 95px;
+    height: 65px;
+    top: 124px;
+    outline: 1px solid var(--brown1);
+    background-color: white;
+    z-index: 10;
+  }
+  .contact_logo_div_left {
+    left: -71px;
+  }
+  .contact_logo_div_right {
+    right: -71px;
+  }
+  .contact_logo {
+    position: relative;
+    z-index: 1;
+    margin-top: 17px;
+    width: 80px;
+  }
 }
-@media all and (max-width: 1200px)
+@media all and (max-width: 1199.97px)
 {
   .contact_div_piece {
     display: block;
     width: 318px;
     margin: 0 auto;
+  }
+
+  .contact_logo_div {
+    display: none;
+  }
+  .contact_logo {
+    display: none;
   }
 }
 
@@ -1727,11 +1794,18 @@ body {
   width: 13.28vw;
   display: inline-block;
 }
-.lb-caption {
+.lb-data .lb-caption {
   font-family: LeagueSpartan;
+  font-size: 20px;
 }
-.lb-number {
-  margin-top: 8px;
+.lb-data .lb-number {
+  font-family: LeagueSpartan;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.lightbox .lb-image {
+  border: 4px solid var(--brown1);
 }
 
 .copyright_txt {
