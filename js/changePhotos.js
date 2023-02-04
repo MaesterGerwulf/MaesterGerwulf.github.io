@@ -2,25 +2,44 @@ let offwhite = "#FCFBFA";
 let brown = "#664332";
 let cyan = "#4FC1B7";
 
-change_photos_btn_1.addEventListener("mouseover", (evt) => {
+function hasTouch()
+{
+  return 'ontouchstart' in document.documentElement
+        || navigator.maxTouchPoints > 0
+        || navigator.msMaxTouchPoints > 0;
+}
+
+if (hasTouch())
+{
+  change_photos_btn_1.addEventListener("mouseover", (evt) => {
     change_photos_hand_1.style.visibility = "hidden";
-})
-change_photos_btn_1.addEventListener("mouseout", (evt) => {
-  change_photos_hand_1.style.visibility = "visible";
-})
-change_photos_btn_1.addEventListener("touchstart", (evt) => {
-  change_photos_hand_1.style.visibility = "hidden";
-})
-change_photos_btn_1.addEventListener("touchend", (evt) => {
-change_photos_hand_1.style.visibility = "visible";
-})
-change_photos_btn_1.addEventListener("mousedown", (evt) => {
-  change_photos_btn_1.style.color = cyan;
-})
-change_photos_btn_1.addEventListener("mouseup", () => {
-  change_photos_btn_1.style.color = offwhite;
-  changePhotos();
-})
+  })
+  change_photos_btn_1.addEventListener("mouseout", (evt) => {
+    change_photos_hand_1.style.visibility = "visible";
+  })
+  change_photos_btn_1.addEventListener("mousedown", (evt) => {
+    change_photos_btn_1.style.color = cyan;
+  })
+  change_photos_btn_1.addEventListener("mouseup", () => {
+    change_photos_btn_1.style.color = offwhite;
+    changePhotos();
+  })
+}
+else
+{
+  change_photos_btn_1.addEventListener("touchstart", (evt) => {
+    change_photos_hand_1.style.visibility = "hidden";
+    change_photos_btn_1.style.color = cyan;
+  })
+  change_photos_btn_1.addEventListener("touchend", (evt) => {
+    change_photos_hand_1.style.visibility = "visible";
+    change_photos_btn_1.style.color = offwhite;
+      changePhotos();
+  })
+}
+
+
+
 
 change_photos_btn_2.addEventListener("mouseover", () => {
   change_photos_hand_2.style.visibility = "hidden";
