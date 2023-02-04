@@ -52,10 +52,14 @@ body {
   width: 328px;
 }
 
-.cls-6 {
-  font-size:32px;
+#since_2008 {
+  position: absolute;
+  left:13px;
+  top:113px;
   font-family: Vitigon;
   font-variation-settings: "wght" 400;
+  font-size: 32px;
+  color: var(--brown1);
 }
 
 .brands_div {
@@ -515,6 +519,15 @@ body {
 
   #home_large {
     width: 196px;
+  }
+  #since_2008 {
+    position: absolute;
+    left:7.77px;
+    top:67.5px;
+    font-family: Vitigon;
+    font-variation-settings: "wght" 400;
+    font-size: 19.1px;
+    color: var(--brown1);
   }
   .and_life_begins_txt {
     font-size: 48px;
