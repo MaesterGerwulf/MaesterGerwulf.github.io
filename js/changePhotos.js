@@ -120,7 +120,7 @@ else
     change_dreams_hand_1.style.visibility = "hidden";
     change_dreams_btn_1.style.color = brown;
   }, {passive: true})
-  change_photos_btn_1.addEventListener("touchend", (evt) => {
+  change_dreams_btn_1.addEventListener("touchend", (evt) => {
     change_dreams_hand_1.style.visibility = "visible";
     change_dreams_btn_1.style.color = offwhite;
       changeDreams();
@@ -130,7 +130,7 @@ else
     change_dreams_hand_2.style.visibility = "hidden";
     change_dreams_btn_2.style.color = brown;
   }, {passive: true})
-  change_photos_btn_2.addEventListener("touchend", (evt) => {
+  change_dreams_btn_2.addEventListener("touchend", (evt) => {
     change_dreams_hand_2.style.visibility = "visible";
     change_dreams_btn_2.style.color = offwhite;
       changeDreams();
@@ -140,7 +140,7 @@ else
     change_rooms_hand_1.style.visibility = "hidden";
     change_rooms_btn_1.style.color = cyan;
   }, {passive: true})
-  change_photos_btn_1.addEventListener("touchend", (evt) => {
+  change_rooms_btn_1.addEventListener("touchend", (evt) => {
     change_rooms_hand_1.style.visibility = "visible";
     change_rooms_btn_1.style.color = offwhite;
     changeRooms();
@@ -149,7 +149,7 @@ else
     change_rooms_hand_2.style.visibility = "hidden";
     change_rooms_btn_2.style.color = cyan;
   }, {passive: true})
-  change_photos_btn_2.addEventListener("touchend", (evt) => {
+  change_rooms_btn_2.addEventListener("touchend", (evt) => {
     change_rooms_hand_2.style.visibility = "visible";
     change_rooms_btn_2.style.color = offwhite;
     changeRooms();
