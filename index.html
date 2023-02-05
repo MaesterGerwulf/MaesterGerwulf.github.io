@@ -12,7 +12,18 @@
   <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/street.css">
-  <title>O'lala</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>O'lala Baby</title>
 </head>
 <body onload="onloadd()">
 
@@ -20,24 +31,32 @@
   <img id="home_btn_small" src="images/olala_logo_small.svg"  alt="">
 </a>
 
-<!-- <button disabled id="en_button" onclick="changeLanguageTo('en')" style="position: absolute; left:500px; top: 0; z-index: 3;">asd</button> -->
-<!-- <button id="ge_button" onclick="changeLanguageTo('ge')" style="position: absolute; left:550px; top: 0; z-index: 3;">asd</button> -->
-
 <div id="section_1" class="section">
   
   <div class="brands_div" id="brands_div_1">
-    
-    <a href="/">
+
       <div style="position: relative; display: inline-block;">
-        <img id="home_large" src="images/olala_logo_large.svg" alt="Olala Logo Large">
-        <p id="since_2008">Since 2008</p>
+
+        <div id="lang_btns_div">
+          <div id="lang_btn_en" class="lang_btn">
+            <img id="lang_btn_en_flag" class="lang_btn_flag" src="images/flags/UK.svg" alt="">
+          </div>
+          <div id="lang_btn_ge" class="lang_btn">
+            <img id="lang_btn_ge_flag" class="lang_btn_flag" src="images/flags/Flag_of_Georgia.svg" alt="">
+          </div>
+        </div>
+
+        <a href="/">
+          <img id="home_large" src="images/olala_logo_large.svg" alt="Olala Logo Large">
+          <p id="since_2008">Since 2008</p>
+        </a>
+
       </div>
-    </a>
 
-    <h3 id="and_life_begins_txt_en" class="and_life_begins_txt">... and life begins ...</h3>
+    <h3 class="and_life_begins_txt_en and_life_begins_txt">... and life begins ...</h3>
 
-    <h3 class="olala_txt olala_txt_1 olala_txt_en">Parenthood is the greatest adventure you can ever go on. Here in O’lala Baby, we believe, that  every family deserves the best to bring colorful, creative expression to this journey.</h3>
-    <h3 class="olala_txt olala_txt_2 olala_txt_en">Our passion for providing only the finest and most trusted baby products for you and your little one, drives us to carefully curate our brands and offer you the highest standards of style, quality and safety.</h3>
+    <h3 id="olala_txt_1" class="olala_txt olala_txt_en">Parenthood is the greatest adventure you can ever go on. Here in O’lala Baby, we believe, that  every family deserves the best to bring colorful, creative expression to this journey.</h3>
+    <h3 id="olala_txt_2" class="olala_txt olala_txt_en">Our passion for providing only the finest and most trusted baby products for you and your little one, drives us to carefully curate our brands and offer you the highest standards of style, quality and safety.</h3>
 
     <h3 id="our_brands_1_txt" class="our_brands_txt our_brands_txt_en">Our Brands</h3>
 
@@ -169,7 +188,7 @@
        <div class="showcase_line showcase_line_middle">
           <img class="showcase_item showcase_item_pad_right" name="Moulin Roty" src="images/showcase/Moulin_Roty_Bedding_2_80.webp" alt="Moulin_Roty_Bedding_2">
           <img class="showcase_item showcase_item_pad_right" name="Bugaboo" src="images/showcase/Bugaboo_Play_Yard_80.webp" alt="Bugaboo_Play_Yard">
-          <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_MuTable_Scenes_80.webp" alt="Stokke_MuTable_Scenes">
+          <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_MuTable_Scenes_80.webp" alt="Stokke_MuTable_Scenes" style="outline: 1px solid var(--brown1); border-radius: 8px;">
           <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Flexi_Bath_80.webp" alt="Stokke_Flexi_Bath">
           <img class="showcase_item showcase_item_pad_right" name="Stokke" src="images/showcase/Stokke_Sleepi_Dresser_&_Changer_80.webp" alt="Stokke_Sleepi_Dresser_&_Changer">
        </div>
@@ -183,16 +202,8 @@
     </div>
    
     <div class="showcase_large_item_div">
-      <div class="showcase_logo_div showcase_logo_div_left">
-        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
-      </div>
-
       <img src="images/Showcase_Wave_Middle.svg" class="showcase_wave showcase_wave_middle" alt="">
       <img id="showcase_1_large_item" class="showcase_large_item" src="images/showcase/Stokke_MuTable_Scenes_270.jpg" alt="">
-
-      <div class="showcase_logo_div showcase_logo_div_right">
-        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
-      </div>
     </div>
    
     <div class="showcase_side">
@@ -281,7 +292,7 @@
 
 <div id="section_2" class="section">
 
-  <video autoplay muted id="video_background" poster="images/night_back.png">
+  <video autoplay muted id="video_background" poster="images/day_back.jpg">
     <source data-src="Background - Night.mp4" type="video/mp4">
   </video>
   
@@ -311,7 +322,7 @@
     
     <div class="brand_div" id="brand_div_2_3">
       <h4 class="brand_name brand_name_2">Quax</h4>
-      <a href="https://quax.eu"></a>
+      <a href="https://quax.eu">
         <div class="brand_inner_div brand_inner_div_2">
           <img class="absolute" id="brand_logo_8" src="images/logos/Quax.svg" alt="Quax Logo">
           <img id="quax_belgium_flag" class="flag flag_w33" src="images/flags/Flag_of_Belgium.svg" alt="Belgium Flag">
@@ -409,7 +420,7 @@
          <img src="images/Showcase_Wave_Left.svg" class="showcase_wave" alt="">
          <img class="showcase_item showcase_item_pad_left" name="Bugaboo" src="images/showcase/Bugaboo_Strollers_Twin_2_80.webp" alt="Bugaboo_Strollers_Twin_2">
          <img class="showcase_item showcase_item_pad_left" name="BeSafe" src="images/showcase/BeSafe_iZi_Turn_80.webp" alt="BeSafe_iZi_Turn">
-         <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Xplory_X_2_80.webp" alt="Stokke_Xplory_X_2">
+         <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Xplory_X_2_80.webp" alt="Stokke_Xplory_X_2" style="outline: 1px solid var(--brown1); border-radius: 8px;">
          <img class="showcase_item showcase_item_pad_left" name="Bugaboo" src="images/showcase/Bugaboo_Strollers_Twin_80.webp" alt="Bugaboo_Strollers_Twin">
          <img class="showcase_item showcase_item_pad_left" name="Stokke" src="images/showcase/Stokke_Xplory_X_3_80.webp" alt="Stokke_Xplory_X_3">
        </div>
@@ -430,16 +441,8 @@
     </div>
    
     <div class="showcase_large_item_div">
-      <div class="showcase_logo_div showcase_logo_div_left">
-        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
-      </div>
-
        <img src="images/Showcase_Wave_Middle.svg" class="showcase_wave showcase_wave_middle" alt="">
        <img id="showcase_2_large_item" class="showcase_large_item" src="images/showcase/Stokke_Xplory_X_2_270.jpg" alt="">
-
-       <div class="showcase_logo_div showcase_logo_div_right">
-        <img class="showcase_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
-      </div>
     </div>
    
     <div class="showcase_side">
@@ -619,12 +622,9 @@
     </div>
   </div>
 
-  <h3 class="olala_txt olala_txt_3">And we don't just stop at offering top-quality products in the universe.<br>Our commitment to exceptional customer service proudly sets us apart.</h3>
-  <h3 class="olala_txt olala_txt_4">This is the beginning of a beautiful story.<br>Just remember, we are here for you.<br>Both of you.</h3>
+  <h3 id="olala_txt_3" class="olala_txt olala_txt_en">And we don't just stop at offering top-quality products in the universe.<br>Our commitment to exceptional customer service proudly sets us apart.</h3>
+  <h3 id="olala_txt_4" class="olala_txt olala_txt_en">This is the beginning of a beautiful story.<br>Just remember, we are here for you.<br>Both of you.</h3>
 
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="nbKkP4OI"></script>
-  
   <div id="contact_div">
 
     <div class="contact_div_piece" id="google_map" style="position: relative; height: 320px; vertical-align: top;">
@@ -639,29 +639,27 @@
 
     <div class="contact_div_piece" id="contact_inner_div">
       <div class="contact_logo_div contact_logo_div_left">
-        <img class="contact_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
+        <a href="https://www.facebook.com/olala.ge">
+          <svg id="facebook_icon" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+        </a>
       </div>
       
       <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
       <p id="contact_txt">Contact</p>
-      <p id="contact_info">s.mujiri@yahoo.com<br>9a Napareuli Str.<br>Tbilisi 0179, Georgia<br>032 225 02 41</p>
-      <a href="https://www.instagram.com/olala.ge">
-        <svg id="instagram_icon" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-      </a>
-      <div class="fb-page" data-href="https://www.facebook.com/olala.ge" data-tabs="" data-width="318" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/olala.ge" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/olala.ge">O&#039;lala • ო&#039;ლალა</a></blockquote></div>
-      
+      <p id="contact_info">(+995) 322 250 241<br>contact@olala.ge<br>9a Napareuli Str.<br>Tbilisi 0179, Georgia</p>
+
+      <h3 class="and_life_begins_txt_en" id="and_life_begins_txt_bottom">... and life begins ...</h3>
+
       <div class="contact_logo_div contact_logo_div_right">
-        <img class="contact_logo" src="images/Olala_Logo_Mini.svg" alt="Olala Logo Mini">
+        <a href="https://www.instagram.com/olala.ge">
+          <svg id="instagram_icon" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
       </div>
     </div>
   
     <div class="contact_div_piece" id="contact_photo_div">
       <img class="contact_wave" src="images/shop_wave_white.svg" alt="">
       <img id="contact_photo" src="images/contact_photo.png" alt="">
-      <div id="contact_photo_txt_div">
-        <p class="contact_photo_txt">asd</p>
-        <p class="contact_photo_txt">asd</p>
-      </div>
     </div>
   
   </div>
@@ -689,13 +687,13 @@
     </div>
 
     <div class="store_photos_div">
-      <a href="images/store/1_Large.jpg" data-lightbox="viewer" data-title="Store Outside 1" data-alt="">
+      <a href="images/store/1_Large.jpg" data-lightbox="viewer" data-alt="">
         <img class="store_photo" src="images/store/1_Small.jpg" alt="">
       </a>
-      <a href="images/store/2_Large.jpg" data-lightbox="viewer" data-title="Store Outside 2" data-alt="">
+      <a href="images/store/2_Large.jpg" data-lightbox="viewer" data-alt="">
         <img class="store_photo" src="images/store/2_Small.jpg" alt="">
       </a>
-      <a href="images/store/3_Large.jpg" data-lightbox="viewer" data-title="Store Outside 3" data-alt="">
+      <a href="images/store/3_Large.jpg" data-lightbox="viewer" data-alt="">
         <img class="store_photo" src="images/store/3_Small.jpg" alt="">
       </a>
     </div>
@@ -715,13 +713,13 @@
     </div>
 
     <div class="store_photos_div">
-      <a href="images/store/4_Large.jpg" data-lightbox="viewer" data-title="Store Inside 1" data-alt="">
+      <a href="images/store/4_Large.jpg" data-lightbox="viewer" data-alt="">
         <img class="store_photo" src="images/store/4_Small.jpg" alt="">
       </a>
-      <a href="images/store/5_Large.jpg" data-lightbox="viewer" data-title="Store Inside 2" data-alt="">
+      <a href="images/store/5_Large.jpg" data-lightbox="viewer" data-alt="">
         <img class="store_photo" src="images/store/5_Small.jpg" alt="">
       </a>
-      <a href="images/store/6_Large.jpg" data-lightbox="viewer" data-title="Store Inside 3" data-alt="">
+      <a href="images/store/6_Large.jpg" data-lightbox="viewer" data-alt="">
         <img class="store_photo" src="images/store/6_Small.jpg" alt="">
       </a>
     </div>
